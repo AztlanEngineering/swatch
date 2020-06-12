@@ -181,6 +181,6 @@ export const Getters = () => {
   </>
 )}
 
-Swatches.parameters = storyParameters
-Setters.parameters = storyParameters
-Getters.parameters = storyParameters
+//Swatches.parameters = storyParameters
+//Setters.parameters = storyParameters
+//Getters.parameters = storyParameters
