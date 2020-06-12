@@ -1,0 +1,31 @@
+{
+  "name": "@fwrlines/swatch",
+  "author": "Adrian V.",
+  "version": "0.1.0",
+  "description": "",
+  "repository": "github:fwrlines/swatch",
+  "sideEffects": false,
+  "scripts": {
+    "storybook": "start-storybook -p 6006 -s ./src/assets/images,./src/assets/favicon",
+    "build-storybook": "rm -rf ./public/* && build-storybook -c .storybook -o public --quiet -s ./src/assets/images,./src/assets/favicon",
+    "now-build": "mkdir ./public && npm run build-storybook --quiet",
+    "pub": "npm version patch && npm publish",
+    "commit": "git add . && git commit -m 'Version bump' && git push"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "babel-loader": "^8.1.0",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^13.2.1",
+    "stylelint-config-palantir": "^4.0.1",
+    "stylelint-scss": "^3.16.0"
+  },
+  "dependencies": {}
+}
