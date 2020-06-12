@@ -8,6 +8,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006 -s ./src/assets/images,./src/assets/favicon",
     "build-storybook": "rm -rf ./public/* && build-storybook -c .storybook -o public --quiet -s ./src/assets/images,./src/assets/favicon",
+    "build":"echo 0",
     "now-build": "mkdir ./public && npm run build-storybook --quiet",
     "pub": "npm version patch && npm publish",
     "commit": "git add . && git commit -m 'Version bump' && git push"
