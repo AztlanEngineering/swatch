@@ -3,8 +3,8 @@ import { create } from '@storybook/theming/create';
 export default create({
   base: 'light',
 
-  colorPrimary: '#25383C',
-	colorSecondary: '#AdCcCA',
+  colorPrimary: '#000000',
+	colorSecondary: '#FF7F00',
 
   // UI
   appBg: '#FFFFFF',
@@ -34,7 +34,7 @@ export default create({
 	*/
 
 
-  brandTitle: 'Paradise Design System',
-  brandUrl: 'https://fwrlines.com',
-  brandImage: 'https://i.imgur.com/Fljioj0.png',
+  brandTitle: 'Swatch SCSS',
+  brandUrl: 'https://swatch.fwrlines.com',
+  brandImage: 'https://demo.swatch.fwrlines.com/logo.png',
 });
