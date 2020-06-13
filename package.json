@@ -1,7 +1,7 @@
 {
   "name": "@fwrlines/swatch",
   "author": "Adrian V.",
-  "version": "1.0.0-0",
+  "version": "1.0.0-alpha.0",
   "description": "",
   "repository": "github:fwrlines/swatch",
   "sideEffects": false,
@@ -14,8 +14,8 @@
     "compile": "sass main.scss main.css -c --no-source-map && postcss main.css -o main.min.css",
     "compile:custom": "sass custom.scss custom.css -c --no-source-map && postcss custom.css -o custom.min.css",
     "commit": "git add . && git commit -m 'Version boump' && git push",
-    "version:alpha":"npm version prerelease --preid=alpha",
-    "version:beta":"npm version prerelease --preid=beta"
+    "version:alpha": "npm version prerelease --preid=alpha",
+    "version:beta": "npm version prerelease --preid=beta"
   },
   "keywords": [],
   "license": "MIT",
