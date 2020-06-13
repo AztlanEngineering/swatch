@@ -1,15 +1,9 @@
 body {
   margin-top: 3em;
-
   border: 2px solid red;
   background: grey;
   padding: 0 0 0 0;
   color: green;
-  font-weight: bold;
-}
-
-* {
-  border: 2px solid blue;
 }
 
 :root {
@@ -17,3 +11,5 @@ body {
   --red: red;
   --green: yellow;
 }
+
+/*# sourceMappingURL=main.css.map */

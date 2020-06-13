@@ -3,7 +3,7 @@ import { ColorItem, ColorPalette } from '@storybook/addon-docs/blocks'
 
 export default {
   title    :'Colors',
-  component:ColorPalette,
+  //component:ColorPalette,
 }
 
 const storyParameters = {
@@ -182,5 +182,5 @@ export const Getters = () => {
 )}
 
 //Swatches.parameters = storyParameters
-//Setters.parameters = storyParameters
-//Getters.parameters = storyParameters
+Setters.parameters = storyParameters
+Getters.parameters = storyParameters
