@@ -1,0 +1,29 @@
+@use "vars" as * with ();
+@use "mixins";
+// 
+// Main Mixin
+//
+
+@mixin main {
+  :root {
+    @include mixins.define-variables($monochrome-colors);
+    @include mixins.define-variables($modals-colors);
+    @include mixins.define-variables($theme-colors);
+    @include mixins.define-variables($wheel-colors);
+    @include mixins.define-variables($ui-colors);
+    @include mixins.define-variables($sm-colors);
+  }
+
+  @include mixins.setterFromMap($monochrome-colors);
+  @include mixins.setterFromMap($theme-colors);
+  @include mixins.setterFromMap($modals-colors);
+  @include mixins.setterFromMap($wheel-colors);
+  @include mixins.setterFromMap($ui-colors);
+  @include mixins.setterFromMap($sm-colors);
+  @include mixins.define-theme($ui-colors-dark, $dark-theme-class);
+  @include mixins.define-theme($ui-colors-iceberg, "ui-iceberg");
+  @include mixins.getters;
+}
+
+@include main();
+

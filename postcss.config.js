@@ -8,7 +8,12 @@ module.exports = {
 		    'custom-properties': false
 		  }
 		},
-    'cssnano': {}
+    'cssnano': {
+      'preset':[
+        'default',
+        { "discardComments": { "removeAll":true }}
+      ]
+    }
   }
 }
 

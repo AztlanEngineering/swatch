@@ -11,7 +11,7 @@
     "build": "echo 0",
     "now-build": "mkdir ./public && npm run build-storybook --quiet",
     "pub": "npm version patch && npm publish",
-    "compile": "sass main.scss main.css -c && postcss main.css -o main.min.css",
+    "compile": "sass main.scss main.css -c --no-source-map && postcss main.css -o main.min.css",
     "commit": "git add . && git commit -m 'Version bump' && git push"
   },
   "keywords": [],
