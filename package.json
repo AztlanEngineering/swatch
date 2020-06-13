@@ -6,7 +6,7 @@
   "repository": "github:fwrlines/swatch",
   "sideEffects": false,
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s ./src/assets/images,./src/assets/favicon",
+    "storybook": "start-storybook -p 6007 -s ./src/assets/images,./src/assets/favicon",
     "build-storybook": "rm -rf ./public/* && build-storybook -c .storybook -o public --quiet -s ./src/assets/images,./src/assets/favicon",
     "build": "echo 0",
     "now-build": "mkdir ./public && npm run build-storybook --quiet",

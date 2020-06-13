@@ -1,3 +1,4 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path=require('path')
 
 const ADD_SCSS_LIB_TO_CONTEXT = '../src/scss'
@@ -9,10 +10,14 @@ module.exports = {
     // 'PRODUCTION' is used when building the static version of storybook.
 
     // Make whatever fine-grained changes you need
+    config.plugins.push(
+      new MiniCssExtractPlugin()
+    )
+
     config.module.rules.push({
       test: /\.scss$/,
       use: [
-        'style-loader', 
+        MiniCssExtractPlugin.loader,
         {
           loader: 'css-loader',
           options: {

@@ -12,3 +12,11 @@ export const ToStorybook = () => <Welcome showApp={linkTo('Button')} />
 ToStorybook.story = {
   name:'to Storybook',
 }
+
+ToStorybook.parameters = {
+ previewTabs: { 
+    'canvas': { 
+      hidden: true 
+    },
+  }
+}
