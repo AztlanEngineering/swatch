@@ -16,6 +16,7 @@ module.exports = {
 
     config.module.rules.push({
       test: /\.scss$/,
+      sideEffects:true,
       use: [
         MiniCssExtractPlugin.loader,
         {
