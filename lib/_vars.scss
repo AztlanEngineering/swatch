@@ -430,7 +430,9 @@ $ui-colors:(
   ),
 ) !default;
 
-$ui-colors-dark:(
+$colorscheme-light:$ui-colors !default;
+
+$colorscheme-dark:(
   "background":(
     "base":$off-black,
     "light":$darker-grey,
@@ -502,7 +504,7 @@ $iceberg-dark-magenta:dark-nuance($iceberg-magenta);
 $iceberg-dark-cyan:dark-nuance($iceberg-cyan);
 $iceberg-dark-white:dark-nuance($iceberg-white);
 
-$ui-colors-iceberg:(
+$colorsheme-iceberg:(
   "background":(
     "base":$iceberg-dark-black,
     "light":$iceberg-black,
