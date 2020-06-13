@@ -1,15 +1,7 @@
-//
-//Config Variables (Advanced)
-//
-
-
-$setter-dark-theme:"dark";
 
 //
 //Variables
 //
-
-$dark-theme-class:"ui-dark" !default;
 
 $darken-by:15% !default;
 $lighten-by:15% !default;
@@ -242,7 +234,7 @@ $monochrome-colors:(
     "dark":$dark-grey,
     "on":$on-grey,
   )
-);
+)!default;
 
 $theme-colors:(
   "primary":(
@@ -275,7 +267,7 @@ $theme-colors:(
     "dark":$dark-accent3,
     "on":$on-accent3,
   ),
-);
+) !default;
 
 $wheel-colors:(
   "red":(
@@ -344,7 +336,7 @@ $wheel-colors:(
     "dark":$dark-transparent,
     "on":$on-transparent,
   )
-);
+) !default;
 
 $modals-colors:(
   "error":(
@@ -365,7 +357,7 @@ $modals-colors:(
     "dark":$dark-success,
     "on":$on-success,
   ),
-);
+) !default;
 
 $sm-colors:(
   "twitter":(
@@ -392,7 +384,7 @@ $sm-colors:(
     "dark":$dark-google,
     "on":$on-google,
   ),
-);
+) !default;
 
 $ui-colors:(
   "background":(
@@ -436,7 +428,7 @@ $ui-colors:(
     "dark":$grey,
     "on":$black,
   ),
-);
+) !default;
 
 $ui-colors-dark:(
   "background":(
@@ -480,7 +472,7 @@ $ui-colors-dark:(
     "dark":$darker-grey,
     "on":$black,
   ),
-);
+) !default;
 
 $iceberg-black:#161821; /* black   */
 $iceberg-red:#e27878; /* red     */

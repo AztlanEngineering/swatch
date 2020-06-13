@@ -1,28 +1,72 @@
-@use "vars" as * with ();
-@use "mixins";
-// 
-// Main Mixin
-//
+/* Use the foIlowing directive if your working directory is the one that contains this file. (ie, if you use this template in its original folder) */
+@use "lib/vars";
+@use "lib/mixins";
+
+
+
+/*
+ *
+ *
+ *
+ * If you want to set up your custom vars somewhere else (for instance, in a react app, or in a different project), you will want to copy this template to your own scss file, and then do :
+ */
+// @use '@fwrlines/swatch';
+
+/* Make sure, if you use the previous line, to add node_modules to your sass path. See the docs for info. */
+
+
+
+
+/**
+ *
+ *
+ * This is an example of how to use the library with your custom variables.
+ *
+ * In this version, all the variables are the default ones ...
+ * ... except '$monochrome-colors'.
+ *
+ */
+
+$monochrome-colors:(
+  "black":(
+    "base":green,
+    "light":swatch.vars.$off-black,
+    "dark":swatch.vars.$black, //sensible default
+    "on":green,
+  ),
+  "white":(
+    "base":green,
+    "light":swatch.vars.$white, //sensible default
+    "dark":swatch.vars.$off-white,
+    "on":yellow,
+  ),
+  "grey":(
+    "base":red,
+    "light":swatch.vars.$light-grey,
+    "dark":swatch.vars.$dark-grey,
+    "on":red,
+  )
+);
 
 @mixin main {
   :root {
-    @include mixins.define-variables($monochrome-colors);
-    @include mixins.define-variables($modals-colors);
-    @include mixins.define-variables($theme-colors);
-    @include mixins.define-variables($wheel-colors);
-    @include mixins.define-variables($ui-colors);
-    @include mixins.define-variables($sm-colors);
+    @include swatch.mixins.define-variables($monochrome-colors);
+    @include swatch.mixins.define-variables(swatch.vars.$modals-colors);
+    @include swatch.mixins.define-variables(swatch.vars.$theme-colors);
+    @include swatch.mixins.define-variables(swatch.vars.$wheel-colors);
+    @include swatch.mixins.define-variables(swatch.vars.$ui-colors);
+    @include swatch.mixins.define-variables(swatch.vars.$sm-colors);
   }
 
-  @include mixins.setterFromMap($monochrome-colors);
-  @include mixins.setterFromMap($theme-colors);
-  @include mixins.setterFromMap($modals-colors);
-  @include mixins.setterFromMap($wheel-colors);
-  @include mixins.setterFromMap($ui-colors);
-  @include mixins.setterFromMap($sm-colors);
-  @include mixins.define-theme($ui-colors-dark, $dark-theme-class);
-  @include mixins.define-theme($ui-colors-iceberg, "ui-iceberg");
-  @include mixins.getters;
+  @include swatch.mixins.setterFromMap($monochrome-colors);
+  @include swatch.mixins.setterFromMap(swatch.vars.$theme-colors);
+  @include swatch.mixins.setterFromMap(swatch.vars.$modals-colors);
+  @include swatch.mixins.setterFromMap(swatch.vars.$wheel-colors);
+  @include swatch.mixins.setterFromMap(swatch.vars.$ui-colors);
+  @include swatch.mixins.setterFromMap(swatch.vars.$sm-colors);
+  @include swatch.mixins.define-theme(swatch.vars.$colorscheme-dark, "ui-dark");
+  @include swatch.mixins.define-theme(swatch.vars.$colorscheme-iceberg, "ui-iceberg");
+  @include swatch.mixins.getters;
 }
 
 @include main();

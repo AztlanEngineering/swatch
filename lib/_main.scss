@@ -1,27 +1,35 @@
-@use "vars" as *;
+/**
+ *
+ * This is the default implementation of the Swatch scss library
+ *
+ *
+ */
+
+@use "vars";
 @use "mixins";
+
 // 
 // Main Mixin
 //
 
 @mixin main {
   :root {
-    @include mixins.define-variables($monochrome-colors);
-    @include mixins.define-variables($modals-colors);
-    @include mixins.define-variables($theme-colors);
-    @include mixins.define-variables($wheel-colors);
-    @include mixins.define-variables($ui-colors);
-    @include mixins.define-variables($sm-colors);
+    @include mixins.define-variables(vars.$monochrome-colors);
+    @include mixins.define-variables(vars.$modals-colors);
+    @include mixins.define-variables(vars.$theme-colors);
+    @include mixins.define-variables(vars.$wheel-colors);
+    @include mixins.define-variables(vars.$ui-colors);
+    @include mixins.define-variables(vars.$sm-colors);
   }
 
-  @include mixins.setterFromMap($monochrome-colors);
-  @include mixins.setterFromMap($theme-colors);
-  @include mixins.setterFromMap($modals-colors);
-  @include mixins.setterFromMap($wheel-colors);
-  @include mixins.setterFromMap($ui-colors);
-  @include mixins.setterFromMap($sm-colors);
-  @include mixins.define-theme($ui-colors-dark, $dark-theme-class);
-  @include mixins.define-theme($ui-colors-iceberg, "ui-iceberg");
+  @include mixins.setterFromMap(vars.$monochrome-colors);
+  @include mixins.setterFromMap(vars.$theme-colors);
+  @include mixins.setterFromMap(vars.$modals-colors);
+  @include mixins.setterFromMap(vars.$wheel-colors);
+  @include mixins.setterFromMap(vars.$ui-colors);
+  @include mixins.setterFromMap(vars.$sm-colors);
+  @include mixins.define-theme(vars.$colorscheme-dark, "ui-dark");
+  @include mixins.define-theme(vars.$colorscheme-iceberg, "ui-iceberg");
   @include mixins.getters;
 }
 

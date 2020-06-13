@@ -32,7 +32,10 @@ const WHEEL = [
   'azure',
   'blue',
   'violet',
-  'pink'
+  'pink',
+  'black',
+  'white',
+  'grey'
 ]
 
 const MODALS = [
