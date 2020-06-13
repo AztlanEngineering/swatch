@@ -1,2 +1,2 @@
-@use "lib/main" as "swatch";
-@include swatch.main;
+@use "lib";
+@include lib.main;
