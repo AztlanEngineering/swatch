@@ -47,7 +47,7 @@ $monochrome-colors:(
   )
 );
 
-@mixin main {
+@mixin all {
   :root {
     @include mixins.define-variables($monochrome-colors);
     @include mixins.define-variables(vars.$modals-colors);
@@ -68,5 +68,5 @@ $monochrome-colors:(
   @include mixins.getters;
 }
 
-@include main();
+@include all();
 
