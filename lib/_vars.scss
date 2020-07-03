@@ -405,9 +405,9 @@ $ui-colors:(
     "on":$on-black,
   ),
   "link":(
-    "base":$blue,
-    "light":$light-blue,
-    "dark":$dark-blue,
+    "base":$light-blue,
+    "light":$azure,
+    "dark":$blue,
     "on":$on-blue,
   ),
   "heading":(
@@ -432,6 +432,16 @@ $ui-colors:(
 
 $colorscheme-light:$ui-colors !default;
 
+$colorscheme-light-shadow-color:$light-grey;
+$colorscheme-light-extras:(
+  "shadow":.2em .2em .5em rgba(
+    red($colorscheme-light-shadow-color),
+    blue($colorscheme-light-shadow-color),
+    green($colorscheme-light-shadow-color),
+    .8
+  ),
+);
+
 $colorscheme-dark:(
   "background":(
     "base":$off-black,
@@ -446,15 +456,15 @@ $colorscheme-dark:(
   ),
   "navlink":(
     "base":$off-white,
-    "light":$white,
-    "dark":$lighter-grey,
-    "on":$on-black,
+    "light":$lighter-grey,
+    "dark":$white,
+    "on":$on-white,
   ),
   "link":(
-    "base":$blue,
-    "light":$light-blue,
-    "dark":$dark-blue,
-    "on":$on-blue,
+    "base":$dark-azure,
+    "light":dark-nuance($dark-azure),
+    "dark":$azure,
+    "on":$on-azure,
   ),
   "heading":(
     "base":$white,
@@ -464,17 +474,28 @@ $colorscheme-dark:(
   ),
   "subtitle":(
     "base":$light-grey,
-    "light":$lighter-grey,//todo diff here
-    "dark":$grey,
+    "light":$grey,//todo diff here
+    "dark":$lighter-grey,
     "on":$on-white,
   ),
   "metadata":(
     "base":$dark-grey,
-    "light":$grey,
-    "dark":$darker-grey,
-    "on":$black,
+    "light":$darker-grey,
+    "dark":$grey,
+    "on":$on-black,
   ),
 ) !default;
+
+
+$colorscheme-dark-shadow-color:$black;
+$colorscheme-dark-extras:(
+  "shadow":.2em .2em .5em rgba(
+    red($colorscheme-dark-shadow-color),
+    blue($colorscheme-dark-shadow-color),
+    green($colorscheme-dark-shadow-color),
+    .3
+  ),
+);
 
 $iceberg-black:#161821; /* black   */
 $iceberg-red:#e27878; /* red     */
@@ -537,7 +558,7 @@ $colorscheme-iceberg:(
   "subtitle":(
     "base":$iceberg-dark-white,
     "light":$iceberg-white,//todo diff here
-    "dark":dark-nuiance($iceberg-dark-white),
+    "dark":dark-nuance($iceberg-dark-white),
     "on":$iceberg-black,
   ),
   "metadata":(
@@ -566,3 +587,12 @@ $colorscheme-iceberg:(
   ),
 );
 
+$colorscheme-iceberg-shadow-color:$iceberg-light-cyan;
+$colorscheme-iceberg-extras:(
+  "shadow-hover":0 0 4em rgba(
+    red($colorscheme-iceberg-shadow-color),
+    blue($colorscheme-iceberg-shadow-color),
+    green($colorscheme-iceberg-shadow-color),
+    .2
+  ),
+);

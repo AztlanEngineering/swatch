@@ -36,6 +36,15 @@ $getter-fill:"e-" !default;
   }
 }
 
+@mixin define-theme-extras($array, $theme-name) {
+  #main.#{$theme-name},
+  #main > .#{$theme-name} {
+    @each $key, $value in $array {
+      --#{$key}: #{$value};
+    }
+  }
+}
+
 
 //
 //Setters

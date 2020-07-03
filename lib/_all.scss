@@ -29,8 +29,11 @@
   @include mixins.setterFromMap(vars.$ui-colors);
   @include mixins.setterFromMap(vars.$sm-colors);
   @include mixins.define-theme(vars.$colorscheme-light, "ui-light");
+  @include mixins.define-theme-extras(vars.$colorscheme-light-extras, "ui-light");
   @include mixins.define-theme(vars.$colorscheme-dark, "ui-dark");
+  @include mixins.define-theme-extras(vars.$colorscheme-dark-extras, "ui-dark");
   @include mixins.define-theme(vars.$colorscheme-iceberg, "ui-iceberg");
+  @include mixins.define-theme-extras(vars.$colorscheme-iceberg-extras, "ui-iceberg");
   @include mixins.getters;
 }
 
