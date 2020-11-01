@@ -1,5 +1,7 @@
 # swatch
 
+**A modern, lightweight, framework-agnostic, extensible theming library based on css4 variables and the setter/getter pattern** 
+
 ## Docs
 
 **Docs, installation, api reference, walkthrough => [Here](https://swatch.dev)**
