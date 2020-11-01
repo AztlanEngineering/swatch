@@ -6,7 +6,7 @@
 
 **Docs, installation, api reference, walkthrough => [Here](https://swatch.dev)**
 
-Demos => [Here](http://xyz.779.mx:3000/docs/examples)
+**Demos => [Here](http://xyz.779.mx:3000/docs/examples)**
 
 Library Issues => [Here](https://github.com/fwrlines/swatch/issues)
 
