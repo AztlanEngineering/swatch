@@ -44,7 +44,7 @@ Your contributions are welcome.
 
 #### What is it made with?
 
-[![made-with-NVIM](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://github.com/neovim/neovim)
+[![made-with-NVIM](https://img.shields.io/badge/Made%20with-NVIM-1f425f.svg)](https://github.com/neovim/neovim)
 
 #### Docs passing?
 
