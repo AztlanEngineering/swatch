@@ -40,7 +40,7 @@ Your contributions are welcome.
 
 #### Size
 
-[![Only 32 Kb](https://badge-size.herokuapp.com/Naereen/StrapDown.js/master/strapdown.min.js)](https://github.com/fwrlines/swatch/blob/master/main.min.css)
+[![Only 32 Kb](https://badge-size.herokuapp.com/Naereen/StrapDown.js/master/strapdown.min.js)](https://unpkg.com/@fwrlines/swatch@latest/main.min.css)
 
 #### What is it made with?
 
