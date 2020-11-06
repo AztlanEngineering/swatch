@@ -21,6 +21,16 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "dillardzach",
+      "name": "ali mg",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/72168946?v=4",
+      "profile": "https://github.com/dillardzach",
+      "contributions": [
+        "doc",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7
