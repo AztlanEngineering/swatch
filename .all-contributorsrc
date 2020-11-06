@@ -9,6 +9,19 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "none",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "779g",
+      "name": "779g",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/47156835?v=4",
+      "profile": "https://github.com/779g",
+      "contributions": [
+        "doc",
+        "bug",
+        "code",
+        "maintenance"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
