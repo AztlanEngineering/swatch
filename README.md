@@ -1,15 +1,3 @@
-# swatch
-
-**A modern, lightweight, framework-agnostic, extensible theming library based on css4 variables and the setter/getter pattern.** 
-
-## Docs
-
-**Docs, installation, api reference, walkthrough => [Here](https://swatch.dev)**
-
-**Demos => [Here](http://xyz.779.mx:3000/docs/examples)**
-
-
-
 # Contributions
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -34,13 +22,13 @@ Your contributions are welcome.
 
 [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/fwrlines/swatch/issues)
 
-#### Docs issues
-
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/fwrlines/swatch-docs/issues)
-
 #### Size
 
-[![Only 32 Kb](https://badge-size.herokuapp.com/Naereen/StrapDown.js/master/strapdown.min.js)](https://unpkg.com/@fwrlines/swatch@latest/main.min.css)
+[![Only 20 Kb](https://img.shields.io/badge/Size-19.5KB-green.svg)](https://unpkg.com/@fwrlines/swatch@latest/main.min.css)
+
+#### gzip Size
+
+[![Only 3.2 Kb](https://img.shields.io/badge/gzip-3.2KB-green.svg)](https://unpkg.com/@fwrlines/swatch@latest/main.min.css)
 
 #### What is it made with?
 
@@ -50,3 +38,12 @@ Your contributions are welcome.
 
 [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/fwrlines/swatch-docs)
 
+# swatch
+
+**A modern, lightweight, framework-agnostic, extensible theming library based on css4 variables and the setter/getter pattern.** 
+
+## Docs
+
+**Docs, installation, api reference, walkthrough => [Here](https://swatch.dev)**
+
+**Demos => [Here](http://xyz.779.mx:3000/docs/examples)**
