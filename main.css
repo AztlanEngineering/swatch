@@ -16,6 +16,12 @@
 /* cyan    */
 /* white   */
 /*! from alphabet-scss */
+/**
+ *
+ * This is the default implementation of the Swatch scss library
+ *
+ *
+ */
 :root {
   --black: #000000;
   --light-black: #121314;
@@ -116,9 +122,9 @@
   --light-navlink: #323334;
   --dark-navlink: #000000;
   --on-navlink: #ffffff;
-  --link: #213a8f;
-  --light-link: #3c5ac1;
-  --dark-link: #0e1e56;
+  --link: #3c5ac1;
+  --light-link: #32f9e1;
+  --dark-link: #213a8f;
   --on-link: #ffffff;
   --heading: #000000;
   --light-heading: #121314;
@@ -1041,6 +1047,41 @@
   --on-z: var(--on-google);
 }
 
+.ui-light {
+  --background: #f2f3f4;
+  --light-background: #ffffff;
+  --dark-background: #dddedf;
+  --paragraph: #121314;
+  --light-paragraph: #000000;
+  --dark-paragraph: #323334;
+  --on-paragraph: #ffffff;
+  --navlink: #121314;
+  --light-navlink: #323334;
+  --dark-navlink: #000000;
+  --on-navlink: #ffffff;
+  --link: #3c5ac1;
+  --light-link: #32f9e1;
+  --dark-link: #213a8f;
+  --on-link: #ffffff;
+  --heading: #000000;
+  --light-heading: #121314;
+  --dark-heading: #000000;
+  --on-heading: #ffffff;
+  --subtitle: #727374;
+  --light-subtitle: #aabbcc;
+  --dark-subtitle: #121314;
+  --on-subtitle: #ffffff;
+  --metadata: #bcbdbe;
+  --light-metadata: #dddedf;
+  --dark-metadata: #aabbcc;
+  --on-metadata: #000000;
+}
+
+#main.ui-light,
+#main > .ui-light {
+  --shadow: 0.2em 0.2em 0.5em rgba(188, 190, 189, 0.8);
+}
+
 .ui-dark {
   --background: #121314;
   --light-background: #323334;
@@ -1050,25 +1091,30 @@
   --dark-paragraph: #dddedf;
   --on-paragraph: #000000;
   --navlink: #f2f3f4;
-  --light-navlink: #ffffff;
-  --dark-navlink: #dddedf;
-  --on-navlink: #ffffff;
-  --link: #213a8f;
-  --light-link: #3c5ac1;
-  --dark-link: #0e1e56;
+  --light-navlink: #dddedf;
+  --dark-navlink: #ffffff;
+  --on-navlink: #000000;
+  --link: #00dfc4;
+  --light-link: #009280;
+  --dark-link: #32f9e1;
   --on-link: #ffffff;
   --heading: #ffffff;
   --light-heading: #ffffff;
   --dark-heading: #f2f3f4;
   --on-heading: #000000;
   --subtitle: #bcbdbe;
-  --light-subtitle: #dddedf;
-  --dark-subtitle: #aabbcc;
+  --light-subtitle: #aabbcc;
+  --dark-subtitle: #dddedf;
   --on-subtitle: #000000;
   --metadata: #727374;
-  --light-metadata: #aabbcc;
-  --dark-metadata: #323334;
-  --on-metadata: #000000;
+  --light-metadata: #323334;
+  --dark-metadata: #aabbcc;
+  --on-metadata: #ffffff;
+}
+
+#main.ui-dark,
+#main > .ui-dark {
+  --shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.3);
 }
 
 .ui-iceberg {
@@ -1093,7 +1139,7 @@
   --on-heading: #161821;
   --subtitle: #9399b8;
   --light-subtitle: #c6c8d1;
-  --dark-subtitle: dark-nuiance(#9399b8);
+  --dark-subtitle: #5866a6;
   --on-subtitle: #161821;
   --metadata: #84a0c6;
   --light-metadata: #91acd1;
@@ -1111,6 +1157,11 @@
   --light-warning: #e9b189;
   --dark-warning: #e0782d;
   --on-warning: #c6c8d1;
+}
+
+#main.ui-iceberg,
+#main > .ui-iceberg {
+  --shadow-hover: 0 0 4em rgba(149, 206, 196, 0.2);
 }
 
 .b-x {
