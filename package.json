@@ -1,13 +1,13 @@
 {
   "name": "@fwrlines/swatch",
   "author": "Adrian V.",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "",
   "repository": "github:fwrlines/swatch",
   "sideEffects": true,
   "scripts": {
     "build": "echo 0",
-    "filesize":"./scripts/filesize.js",
+    "filesize": "./scripts/filesize.js",
     "now-build": "mkdir ./public && npm run build-storybook --quiet",
     "compile:main": "sass main.scss main.css -c --no-source-map && npm run filesize -- main.css",
     "compile:custom": "sass custom.scss custom.css -c --no-source-map && npm run filesize -- custom.css",
