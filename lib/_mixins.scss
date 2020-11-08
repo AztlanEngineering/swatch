@@ -1,6 +1,7 @@
 // Change how the setters and getters are called
 $prefix-hover:"h" !default;
-$prefixes-setters:"x", "y", "z" !default;
+//$prefixes-setters:"x", "y", "z" !default;
+$prefixes-setters:"x", "y" !default;
 //$registry-length:5 !default;
 
 $getter-background:"b-" !default;

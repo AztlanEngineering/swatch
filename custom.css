@@ -16,25 +16,36 @@
 /* cyan    */
 /* white   */
 /*! from alphabet-scss */
+/* Use the foIlowing directives if your working directory is the one that contains this file. (ie, if you use this template in its original folder) */
+/*
+ *
+ *
+ *
+ * If you want to set up your custom vars somewhere else (for instance, in a react app, or in a different project), you will want to copy this template to your own scss file, and then do :
+ */
+/* Make sure, if you use the previous directives, to add node_modules to your sass path. See the docs for info. If you dont do this you will encounter a module not found error. */
 /**
  *
- * This is the default implementation of the Swatch scss library
  *
+ * This is an example of how to use the library with your custom variables.
+ *
+ * In this version, all the variables are the default ones ...
+ * ... except '$monochrome-colors', which is set to a custom palette.
  *
  */
 :root {
-  --black: #000000;
+  --black: green;
   --light-black: #121314;
   --dark-black: #000000;
-  --on-black: #ffffff;
-  --white: #ffffff;
+  --on-black: green;
+  --white: green;
   --light-white: #ffffff;
   --dark-white: #f2f3f4;
-  --on-white: #000000;
-  --grey: #aabbcc;
+  --on-white: yellow;
+  --grey: red;
   --light-grey: #bcbdbe;
   --dark-grey: #727374;
-  --on-grey: #ffffff;
+  --on-grey: red;
   --error: #f8333c;
   --light-error: #f48489;
   --dark-error: #df000a;
@@ -174,6 +185,15 @@
   --on-y: var(--on-black);
 }
 
+.z-black,
+.zh-black:focus,
+.zh-black:hover {
+  --z: var(--black);
+  --light-z: var(--light-black);
+  --dark-z: var(--dark-black);
+  --on-z: var(--on-black);
+}
+
 .x-white,
 .xh-white:focus,
 .xh-white:hover {
@@ -190,6 +210,15 @@
   --light-y: var(--light-white);
   --dark-y: var(--dark-white);
   --on-y: var(--on-white);
+}
+
+.z-white,
+.zh-white:focus,
+.zh-white:hover {
+  --z: var(--white);
+  --light-z: var(--light-white);
+  --dark-z: var(--dark-white);
+  --on-z: var(--on-white);
 }
 
 .x-grey,
@@ -210,6 +239,15 @@
   --on-y: var(--on-grey);
 }
 
+.z-grey,
+.zh-grey:focus,
+.zh-grey:hover {
+  --z: var(--grey);
+  --light-z: var(--light-grey);
+  --dark-z: var(--dark-grey);
+  --on-z: var(--on-grey);
+}
+
 .x-primary,
 .xh-primary:focus,
 .xh-primary:hover {
@@ -226,6 +264,15 @@
   --light-y: var(--light-primary);
   --dark-y: var(--dark-primary);
   --on-y: var(--on-primary);
+}
+
+.z-primary,
+.zh-primary:focus,
+.zh-primary:hover {
+  --z: var(--primary);
+  --light-z: var(--light-primary);
+  --dark-z: var(--dark-primary);
+  --on-z: var(--on-primary);
 }
 
 .x-secondary,
@@ -246,6 +293,15 @@
   --on-y: var(--on-secondary);
 }
 
+.z-secondary,
+.zh-secondary:focus,
+.zh-secondary:hover {
+  --z: var(--secondary);
+  --light-z: var(--light-secondary);
+  --dark-z: var(--dark-secondary);
+  --on-z: var(--on-secondary);
+}
+
 .x-accent1,
 .xh-accent1:focus,
 .xh-accent1:hover {
@@ -262,6 +318,15 @@
   --light-y: var(--light-accent1);
   --dark-y: var(--dark-accent1);
   --on-y: var(--on-accent1);
+}
+
+.z-accent1,
+.zh-accent1:focus,
+.zh-accent1:hover {
+  --z: var(--accent1);
+  --light-z: var(--light-accent1);
+  --dark-z: var(--dark-accent1);
+  --on-z: var(--on-accent1);
 }
 
 .x-accent2,
@@ -282,6 +347,15 @@
   --on-y: var(--on-accent2);
 }
 
+.z-accent2,
+.zh-accent2:focus,
+.zh-accent2:hover {
+  --z: var(--accent2);
+  --light-z: var(--light-accent2);
+  --dark-z: var(--dark-accent2);
+  --on-z: var(--on-accent2);
+}
+
 .x-accent3,
 .xh-accent3:focus,
 .xh-accent3:hover {
@@ -298,6 +372,15 @@
   --light-y: var(--light-accent3);
   --dark-y: var(--dark-accent3);
   --on-y: var(--on-accent3);
+}
+
+.z-accent3,
+.zh-accent3:focus,
+.zh-accent3:hover {
+  --z: var(--accent3);
+  --light-z: var(--light-accent3);
+  --dark-z: var(--dark-accent3);
+  --on-z: var(--on-accent3);
 }
 
 .x-error,
@@ -318,6 +401,15 @@
   --on-y: var(--on-error);
 }
 
+.z-error,
+.zh-error:focus,
+.zh-error:hover {
+  --z: var(--error);
+  --light-z: var(--light-error);
+  --dark-z: var(--dark-error);
+  --on-z: var(--on-error);
+}
+
 .x-warning,
 .xh-warning:focus,
 .xh-warning:hover {
@@ -334,6 +426,15 @@
   --light-y: var(--light-warning);
   --dark-y: var(--dark-warning);
   --on-y: var(--on-warning);
+}
+
+.z-warning,
+.zh-warning:focus,
+.zh-warning:hover {
+  --z: var(--warning);
+  --light-z: var(--light-warning);
+  --dark-z: var(--dark-warning);
+  --on-z: var(--on-warning);
 }
 
 .x-success,
@@ -354,6 +455,15 @@
   --on-y: var(--on-success);
 }
 
+.z-success,
+.zh-success:focus,
+.zh-success:hover {
+  --z: var(--success);
+  --light-z: var(--light-success);
+  --dark-z: var(--dark-success);
+  --on-z: var(--on-success);
+}
+
 .x-red,
 .xh-red:focus,
 .xh-red:hover {
@@ -370,6 +480,15 @@
   --light-y: var(--light-red);
   --dark-y: var(--dark-red);
   --on-y: var(--on-red);
+}
+
+.z-red,
+.zh-red:focus,
+.zh-red:hover {
+  --z: var(--red);
+  --light-z: var(--light-red);
+  --dark-z: var(--dark-red);
+  --on-z: var(--on-red);
 }
 
 .x-orange,
@@ -390,6 +509,15 @@
   --on-y: var(--on-orange);
 }
 
+.z-orange,
+.zh-orange:focus,
+.zh-orange:hover {
+  --z: var(--orange);
+  --light-z: var(--light-orange);
+  --dark-z: var(--dark-orange);
+  --on-z: var(--on-orange);
+}
+
 .x-yellow,
 .xh-yellow:focus,
 .xh-yellow:hover {
@@ -406,6 +534,15 @@
   --light-y: var(--light-yellow);
   --dark-y: var(--dark-yellow);
   --on-y: var(--on-yellow);
+}
+
+.z-yellow,
+.zh-yellow:focus,
+.zh-yellow:hover {
+  --z: var(--yellow);
+  --light-z: var(--light-yellow);
+  --dark-z: var(--dark-yellow);
+  --on-z: var(--on-yellow);
 }
 
 .x-olive,
@@ -426,6 +563,15 @@
   --on-y: var(--on-olive);
 }
 
+.z-olive,
+.zh-olive:focus,
+.zh-olive:hover {
+  --z: var(--olive);
+  --light-z: var(--light-olive);
+  --dark-z: var(--dark-olive);
+  --on-z: var(--on-olive);
+}
+
 .x-green,
 .xh-green:focus,
 .xh-green:hover {
@@ -442,6 +588,15 @@
   --light-y: var(--light-green);
   --dark-y: var(--dark-green);
   --on-y: var(--on-green);
+}
+
+.z-green,
+.zh-green:focus,
+.zh-green:hover {
+  --z: var(--green);
+  --light-z: var(--light-green);
+  --dark-z: var(--dark-green);
+  --on-z: var(--on-green);
 }
 
 .x-indigo,
@@ -462,6 +617,15 @@
   --on-y: var(--on-indigo);
 }
 
+.z-indigo,
+.zh-indigo:focus,
+.zh-indigo:hover {
+  --z: var(--indigo);
+  --light-z: var(--light-indigo);
+  --dark-z: var(--dark-indigo);
+  --on-z: var(--on-indigo);
+}
+
 .x-azure,
 .xh-azure:focus,
 .xh-azure:hover {
@@ -478,6 +642,15 @@
   --light-y: var(--light-azure);
   --dark-y: var(--dark-azure);
   --on-y: var(--on-azure);
+}
+
+.z-azure,
+.zh-azure:focus,
+.zh-azure:hover {
+  --z: var(--azure);
+  --light-z: var(--light-azure);
+  --dark-z: var(--dark-azure);
+  --on-z: var(--on-azure);
 }
 
 .x-blue,
@@ -498,6 +671,15 @@
   --on-y: var(--on-blue);
 }
 
+.z-blue,
+.zh-blue:focus,
+.zh-blue:hover {
+  --z: var(--blue);
+  --light-z: var(--light-blue);
+  --dark-z: var(--dark-blue);
+  --on-z: var(--on-blue);
+}
+
 .x-violet,
 .xh-violet:focus,
 .xh-violet:hover {
@@ -514,6 +696,15 @@
   --light-y: var(--light-violet);
   --dark-y: var(--dark-violet);
   --on-y: var(--on-violet);
+}
+
+.z-violet,
+.zh-violet:focus,
+.zh-violet:hover {
+  --z: var(--violet);
+  --light-z: var(--light-violet);
+  --dark-z: var(--dark-violet);
+  --on-z: var(--on-violet);
 }
 
 .x-pink,
@@ -534,6 +725,15 @@
   --on-y: var(--on-pink);
 }
 
+.z-pink,
+.zh-pink:focus,
+.zh-pink:hover {
+  --z: var(--pink);
+  --light-z: var(--light-pink);
+  --dark-z: var(--dark-pink);
+  --on-z: var(--on-pink);
+}
+
 .x-transparent,
 .xh-transparent:focus,
 .xh-transparent:hover {
@@ -550,6 +750,15 @@
   --light-y: var(--light-transparent);
   --dark-y: var(--dark-transparent);
   --on-y: var(--on-transparent);
+}
+
+.z-transparent,
+.zh-transparent:focus,
+.zh-transparent:hover {
+  --z: var(--transparent);
+  --light-z: var(--light-transparent);
+  --dark-z: var(--dark-transparent);
+  --on-z: var(--on-transparent);
 }
 
 .x-background,
@@ -570,6 +779,15 @@
   --on-y: var(--on-background);
 }
 
+.z-background,
+.zh-background:focus,
+.zh-background:hover {
+  --z: var(--background);
+  --light-z: var(--light-background);
+  --dark-z: var(--dark-background);
+  --on-z: var(--on-background);
+}
+
 .x-paragraph,
 .xh-paragraph:focus,
 .xh-paragraph:hover {
@@ -586,6 +804,15 @@
   --light-y: var(--light-paragraph);
   --dark-y: var(--dark-paragraph);
   --on-y: var(--on-paragraph);
+}
+
+.z-paragraph,
+.zh-paragraph:focus,
+.zh-paragraph:hover {
+  --z: var(--paragraph);
+  --light-z: var(--light-paragraph);
+  --dark-z: var(--dark-paragraph);
+  --on-z: var(--on-paragraph);
 }
 
 .x-navlink,
@@ -606,6 +833,15 @@
   --on-y: var(--on-navlink);
 }
 
+.z-navlink,
+.zh-navlink:focus,
+.zh-navlink:hover {
+  --z: var(--navlink);
+  --light-z: var(--light-navlink);
+  --dark-z: var(--dark-navlink);
+  --on-z: var(--on-navlink);
+}
+
 .x-link,
 .xh-link:focus,
 .xh-link:hover {
@@ -622,6 +858,15 @@
   --light-y: var(--light-link);
   --dark-y: var(--dark-link);
   --on-y: var(--on-link);
+}
+
+.z-link,
+.zh-link:focus,
+.zh-link:hover {
+  --z: var(--link);
+  --light-z: var(--light-link);
+  --dark-z: var(--dark-link);
+  --on-z: var(--on-link);
 }
 
 .x-heading,
@@ -642,6 +887,15 @@
   --on-y: var(--on-heading);
 }
 
+.z-heading,
+.zh-heading:focus,
+.zh-heading:hover {
+  --z: var(--heading);
+  --light-z: var(--light-heading);
+  --dark-z: var(--dark-heading);
+  --on-z: var(--on-heading);
+}
+
 .x-subtitle,
 .xh-subtitle:focus,
 .xh-subtitle:hover {
@@ -658,6 +912,15 @@
   --light-y: var(--light-subtitle);
   --dark-y: var(--dark-subtitle);
   --on-y: var(--on-subtitle);
+}
+
+.z-subtitle,
+.zh-subtitle:focus,
+.zh-subtitle:hover {
+  --z: var(--subtitle);
+  --light-z: var(--light-subtitle);
+  --dark-z: var(--dark-subtitle);
+  --on-z: var(--on-subtitle);
 }
 
 .x-metadata,
@@ -678,6 +941,15 @@
   --on-y: var(--on-metadata);
 }
 
+.z-metadata,
+.zh-metadata:focus,
+.zh-metadata:hover {
+  --z: var(--metadata);
+  --light-z: var(--light-metadata);
+  --dark-z: var(--dark-metadata);
+  --on-z: var(--on-metadata);
+}
+
 .x-twitter,
 .xh-twitter:focus,
 .xh-twitter:hover {
@@ -694,6 +966,15 @@
   --light-y: var(--light-twitter);
   --dark-y: var(--dark-twitter);
   --on-y: var(--on-twitter);
+}
+
+.z-twitter,
+.zh-twitter:focus,
+.zh-twitter:hover {
+  --z: var(--twitter);
+  --light-z: var(--light-twitter);
+  --dark-z: var(--dark-twitter);
+  --on-z: var(--on-twitter);
 }
 
 .x-facebook,
@@ -714,6 +995,15 @@
   --on-y: var(--on-facebook);
 }
 
+.z-facebook,
+.zh-facebook:focus,
+.zh-facebook:hover {
+  --z: var(--facebook);
+  --light-z: var(--light-facebook);
+  --dark-z: var(--dark-facebook);
+  --on-z: var(--on-facebook);
+}
+
 .x-instagram,
 .xh-instagram:focus,
 .xh-instagram:hover {
@@ -730,6 +1020,15 @@
   --light-y: var(--light-instagram);
   --dark-y: var(--dark-instagram);
   --on-y: var(--on-instagram);
+}
+
+.z-instagram,
+.zh-instagram:focus,
+.zh-instagram:hover {
+  --z: var(--instagram);
+  --light-z: var(--light-instagram);
+  --dark-z: var(--dark-instagram);
+  --on-z: var(--on-instagram);
 }
 
 .x-google,
@@ -750,39 +1049,13 @@
   --on-y: var(--on-google);
 }
 
-.ui-light {
-  --background: #f2f3f4;
-  --light-background: #ffffff;
-  --dark-background: #dddedf;
-  --paragraph: #121314;
-  --light-paragraph: #000000;
-  --dark-paragraph: #323334;
-  --on-paragraph: #ffffff;
-  --navlink: #121314;
-  --light-navlink: #323334;
-  --dark-navlink: #000000;
-  --on-navlink: #ffffff;
-  --link: #3c5ac1;
-  --light-link: #32f9e1;
-  --dark-link: #213a8f;
-  --on-link: #ffffff;
-  --heading: #000000;
-  --light-heading: #121314;
-  --dark-heading: #000000;
-  --on-heading: #ffffff;
-  --subtitle: #727374;
-  --light-subtitle: #aabbcc;
-  --dark-subtitle: #121314;
-  --on-subtitle: #ffffff;
-  --metadata: #bcbdbe;
-  --light-metadata: #dddedf;
-  --dark-metadata: #aabbcc;
-  --on-metadata: #000000;
-}
-
-#main.ui-light,
-#main > .ui-light {
-  --shadow: 0.2em 0.2em 0.5em rgba(188, 190, 189, 0.8);
+.z-google,
+.zh-google:focus,
+.zh-google:hover {
+  --z: var(--google);
+  --light-z: var(--light-google);
+  --dark-z: var(--dark-google);
+  --on-z: var(--on-google);
 }
 
 .ui-dark {
@@ -813,11 +1086,6 @@
   --light-metadata: #323334;
   --dark-metadata: #aabbcc;
   --on-metadata: #ffffff;
-}
-
-#main.ui-dark,
-#main > .ui-dark {
-  --shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.3);
 }
 
 .ui-iceberg {
@@ -860,11 +1128,6 @@
   --light-warning: #e9b189;
   --dark-warning: #e0782d;
   --on-warning: #c6c8d1;
-}
-
-#main.ui-iceberg,
-#main > .ui-iceberg {
-  --shadow-hover: 0 0 4em rgba(149, 206, 196, 0.2);
 }
 
 .b-x {
@@ -977,4 +1240,60 @@
 
 .e-on-y {
   fill: var(--on-y);
+}
+
+.b-z {
+  background: var(--z);
+}
+
+.c-z {
+  color: var(--z);
+  stroke: var(--z);
+}
+
+.d-z {
+  border-color: var(--z);
+}
+
+.e-z {
+  fill: var(--z);
+}
+
+.b-light-z {
+  background: var(--light-z);
+}
+
+.c-light-z {
+  color: var(--light-z);
+  stroke: var(--light-z);
+}
+
+.e-light-z {
+  fill: var(--light-z);
+}
+
+.b-dark-z {
+  background: var(--dark-z);
+}
+
+.c-dark-z {
+  color: var(--dark-z);
+  stroke: var(--dark-z);
+}
+
+.e-dark-z {
+  fill: var(--dark-z);
+}
+
+.b-on-z {
+  background: var(--on-z);
+}
+
+.c-on-z {
+  color: var(--on-z);
+  stroke: var(--on-z);
+}
+
+.e-on-z {
+  fill: var(--on-z);
 }
