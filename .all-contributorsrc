@@ -1,0 +1,46 @@
+{
+  "projectName": "swatch",
+  "projectOwner": "fwrlines",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "779g",
+      "name": "779g",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/47156835?v=4",
+      "profile": "https://github.com/779g",
+      "contributions": [
+        "doc",
+        "bug",
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "dillardzach",
+      "name": "ali mg",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/72168946?v=4",
+      "profile": "https://github.com/dillardzach",
+      "contributions": [
+        "doc",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "clrko",
+      "name": "Claire Kodia",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/60785976?v=4",
+      "profile": "https://clrko.github.io/",
+      "contributions": [
+        "userTesting"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
