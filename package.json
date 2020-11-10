@@ -5,6 +5,7 @@
   "description": "",
   "repository": "github:fwrlines/swatch",
   "scripts": {
+    "prepublish": "npm run build:main",
     "filesize": "./scripts/filesize.js",
     "compile:main": "sass src/main.scss dist/main.css -c --no-source-map && npm run filesize -- dist/main.css",
     "compile:custom": "sass src/custom.scss dist/custom.css -c --no-source-map && npm run filesize -- dist/custom.css",
@@ -12,6 +13,8 @@
     "minify:custom": "postcss dist/custom.css -o dist/custom.min.css && npm run filesize -- dist/custom.min.css",
     "build:main": "npm run compile:main && npm run minify:main",
     "build:custom": "npm run compile:custom && npm run minify:custom",
+    "postinstall": "node ./scripts/postinstall.js",
+    "test-stylelint": "stylelint src/main.scss",
     "version:alpha": "npm version prerelease --preid=alpha",
     "version:beta": "npm version prerelease --preid=beta"
   },
