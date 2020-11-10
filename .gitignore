@@ -20,7 +20,6 @@ pids
 *.pem
 .DS_Store
 dist/static/
-dist/
 public/*
 public/**
 
