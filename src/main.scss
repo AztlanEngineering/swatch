@@ -12,7 +12,7 @@
 // Main Mixin
 //
 
-@mixin all {
+@mixin main {
   :root {
     @include mixins.define-variables(vars.$monochrome-colors);
     @include mixins.define-variables(vars.$modals-colors);
@@ -37,3 +37,4 @@
   @include mixins.getters;
 }
 
+@include main();

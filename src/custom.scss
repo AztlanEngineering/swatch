@@ -1,4 +1,5 @@
 /* Use the foIlowing directives if your working directory is the one that contains this file. (ie, if you use this template in its original folder) */
+
 @use "vars";
 @use "mixins";
 
@@ -47,7 +48,7 @@ $monochrome-colors:(
   )
 );
 
-@mixin all {
+@mixin main {
   :root {
     @include mixins.define-variables($monochrome-colors);
     @include mixins.define-variables(vars.$modals-colors);
@@ -68,5 +69,5 @@ $monochrome-colors:(
   @include mixins.getters;
 }
 
-@include all();
+@include main();
 
