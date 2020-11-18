@@ -4,7 +4,7 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/fwrlines/swatch/releases/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/fwrlines/swatch/graphs/commit-activity) [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/fwrlines/swatch/issues) [![Only 15 Kb](https://img.shields.io/badge/Size-15.0KB-green.svg)](https://unpkg.com/@fwrlines/swatch@latest/main.min.css) [![Only 2.5 Kb](https://img.shields.io/badge/gzip-2.5KB-green.svg)](https://unpkg.com/@fwrlines/swatch@latest/main.min.css) [![made-with-NVIM](https://img.shields.io/badge/Made%20with-NVIM-1f425f.svg)](https://github.com/neovim/neovim) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/fwrlines/swatch-docs)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Docs
