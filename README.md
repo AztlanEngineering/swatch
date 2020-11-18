@@ -22,9 +22,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/779g"><img src="https://avatars3.githubusercontent.com/u/47156835?v=4?s=100" width="100px;" alt=""/><br /><sub><b>779g</b></sub></a><br /><a href="https://github.com/fwrlines/swatch/commits?author=779g" title="Documentation">📖</a> <a href="https://github.com/fwrlines/swatch/issues?q=author%3A779g" title="Bug reports">🐛</a> <a href="https://github.com/fwrlines/swatch/commits?author=779g" title="Code">💻</a> <a href="#maintenance-779g" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/advl"><img src="https://avatars3.githubusercontent.com/u/47156835?v=4?s=100" width="100px;" alt=""/><br /><sub><b>advl</b></sub></a><br /><a href="https://github.com/fwrlines/swatch/commits?author=advl" title="Documentation">📖</a> <a href="https://github.com/fwrlines/swatch/issues?q=author%3Aadvl" title="Bug reports">🐛</a> <a href="https://github.com/fwrlines/swatch/commits?author=advl" title="Code">💻</a> <a href="#maintenance-advl" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/dillardzach"><img src="https://avatars2.githubusercontent.com/u/72168946?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ali mg</b></sub></a><br /><a href="https://github.com/fwrlines/swatch/commits?author=dillardzach" title="Documentation">📖</a> <a href="#maintenance-dillardzach" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://clrko.github.io/"><img src="https://avatars2.githubusercontent.com/u/60785976?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Claire Kodia</b></sub></a><br /><a href="#userTesting-clrko" title="User Testing">📓</a></td>
+    <td align="center"><a href="https://github.com/teezeit"><img src="https://avatars2.githubusercontent.com/u/17304928?s=460&v=4?s=100" width="100px;" alt=""/><br /><sub><b>teezeit</b></sub></a><br /><a href="#userTesting-teezeit" title="User Testing">📓</a></td>
   </tr>
 </table>
 
