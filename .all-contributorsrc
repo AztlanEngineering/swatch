@@ -11,10 +11,10 @@
   "commitConvention": "none",
   "contributors": [
     {
-      "login": "779g",
-      "name": "779g",
+      "login": "advl",
+      "name": "advl",
       "avatar_url": "https://avatars3.githubusercontent.com/u/47156835?v=4",
-      "profile": "https://github.com/779g",
+      "profile": "https://github.com/advl",
       "contributions": [
         "doc",
         "bug",
@@ -40,7 +40,16 @@
       "contributions": [
         "userTesting"
       ]
-    }
+    },
+    {
+      "login": "teezeit",
+      "name": "teezeit",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/17304928?s=460&v=4",
+      "profile": "https://github.com/teezeit",
+      "contributions": [
+        "userTesting"
+      ]
+    },
   ],
   "contributorsPerLine": 7
 }
