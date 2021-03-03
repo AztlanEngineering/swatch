@@ -39,7 +39,6 @@ $treshold-dark-light:.69;
 @function on-nuance($color) {
   $count:red($color) + green($color) + blue($color);
   $max:256 * 3 * $treshold-dark-light;
-
   @if $count < $max {
     @return $light-text;
   }

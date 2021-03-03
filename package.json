@@ -1,5 +1,5 @@
 {
-  "name": "@fwrlines/swatch",
+  "name": "@aztlan/swatch",
   "author": "Adrian V.",
   "version": "1.0.0-beta.5",
   "description": "",
@@ -16,7 +16,11 @@
     "postinstall": "node ./scripts/postinstall.js",
     "test-stylelint": "stylelint src/main.scss",
     "version:alpha": "npm version prerelease --preid=alpha",
-    "version:beta": "npm version prerelease --preid=beta"
+    "version:beta": "npm version prerelease --preid=beta",
+    "test:stylelint": "stylelint src/**/*.scss --rd --rdd --risd --color --formatter verbose",
+    "fix:stylelint": "npm run test:stylelint -- --fix",
+    "test":"npm run test:stylelint"
+
   },
   "keywords": [],
   "license": "MIT",
@@ -24,13 +28,15 @@
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "filesize": "^6.1.0",
-    "postcss-cli": "^8.2.0",
+    "jsonlint": "^1.6.3",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
     "postcss-preset-env": "^6.7.0",
-    "postcss-scss": "^3.0.2",
-    "sass": "^1.29.0",
-    "stylelint": "^13.7.2",
+    "postcss-scss": "^3.0.4",
+    "sass": "^1.32.8",
+    "stylelint": "^13.11.0",
     "stylelint-config-palantir": "^5.0.0",
-    "stylelint-scss": "^3.18.0"
+    "stylelint-scss": "^3.19.0"
   },
   "dependencies": {}
 }

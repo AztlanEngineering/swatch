@@ -76,7 +76,6 @@ $getter-fill:"e-" !default;
 
 @mixin getters {
   $variants:"","light","dark","on";
-
   @each $register in $prefixes-setters {
     @each $variant in $variants {
       @if $variant == "" {
