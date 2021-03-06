@@ -1,31 +1,33 @@
-/* Use the foIlowing directives if your working directory is the one that contains this file. (ie, if you use this template in its original folder) */
+/*
+ Use the foIlowing directives
+ if your working directory is the one that contains this file.
+ (ie, if you use this template in its original folder)
+ */
 
 @use "vars";
 @use "mixins";
 
 /*
- *
- *
- *
- * If you want to set up your custom vars somewhere else (for instance, in a react app, or in a different project), you will want to copy this template to your own scss file, and then do :
+ If you want to set up your custom vars somewhere else
+ (for instance, in a react app, or in a different project),
+ you will want to copy this template to your own scss file, and then do :
  */
 // @use '@fwrlines/swatch/mixins';
 // @use '@fwrlines/swatch/vars';
 
-/* Make sure, if you use the previous directives, to add node_modules to your sass path. See the docs for info. If you dont do this you will encounter a module not found error. */
-
-
-
-
-/**
- *
- *
- * This is an example of how to use the library with your custom variables.
- *
- * In this version, all the variables are the default ones ...
- * ... except '$monochrome-colors', which is set to a custom palette.
- *
+/*
+Make sure, if you use the previous directives,
+to add node_modules to your sass path.
+See the docs for info.
+If you dont do this you will encounter a module not found error.
  */
+
+
+/*
+This is an example of how to use the library with your custom variables.
+In this version, all the variables are the default ones ...
+... except '$monochrome-colors', which is set to a custom palette.
+*/
 
 $monochrome-colors:(
   "black":(

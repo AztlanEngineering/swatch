@@ -80,7 +80,7 @@ $dark-accent2:dark-nuance($accent2) !default;
 $on-accent2:on-nuance($accent2) !default;
 
 //Accent3
-$accent3:pink !default;
+$accent3:#fc60a8 !default;
 $light-accent3:light-nuance($accent3) !default;
 $dark-accent3:dark-nuance($accent3) !default;
 $on-accent3:on-nuance($accent3) !default;
@@ -112,7 +112,7 @@ $dark-yellow:dark-nuance($yellow) !default;
 $on-yellow:on-nuance($yellow) !default;
 
 //Olive
-$olive:grey !default;
+$olive:#a1c181 !default;
 $light-olive:light-nuance($olive) !default;
 $dark-olive:dark-nuance($olive) !default;
 $on-olive:on-nuance($olive) !default;
@@ -149,7 +149,7 @@ $on-violet:on-nuance($violet) !default;
 
 
 //Pink
-$pink:grey !default;
+$pink:#e56399 !default;
 $light-pink:light-nuance($pink) !default;
 $dark-pink:dark-nuance($pink) !default;
 $on-pink:on-nuance($pink) !default;
@@ -233,7 +233,7 @@ $monochrome-colors:(
     "dark":$dark-grey,
     "on":$on-grey,
   )
-)!default;
+) !default;
 
 $theme-colors:(
   "primary":(

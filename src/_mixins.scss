@@ -10,7 +10,7 @@ $getter-border:"d-" !default;
 $getter-fill:"e-" !default;
 
 /*! from alphabet-scss */
-@mixin getterFactory($prefix,$var-name,$properties) {
+@mixin getter-factory($prefix,$var-name,$properties) {
   .#{$prefix}#{$var-name} {
     @each $property in $properties {
       #{$property}: var(--#{$var-name});
@@ -53,7 +53,7 @@ $getter-fill:"e-" !default;
 //
 
 
-@mixin setterFromMap($array) {
+@mixin setter-from-map($array) {
   @each $name, $subarray in $array {
     @each $prefix in $prefixes-setters {
       .#{$prefix}-#{$name},
@@ -79,17 +79,17 @@ $getter-fill:"e-" !default;
   @each $register in $prefixes-setters {
     @each $variant in $variants {
       @if $variant == "" {
-        @include getterFactory($getter-background,$register,("background"));
-        @include getterFactory($getter-color-stroke, $register,("color", "stroke"));
-        @include getterFactory($getter-border,$register,("border-color"));
-        @include getterFactory($getter-fill,$register,("fill"));
+        @include getter-factory($getter-background,$register,("background"));
+        @include getter-factory($getter-color-stroke, $register,("color", "stroke"));
+        @include getter-factory($getter-border,$register,("border-color"));
+        @include getter-factory($getter-fill,$register,("fill"));
       }
       @else {
         $v:"#{$variant}-#{$register}";//"
 
-        @include getterFactory($getter-background,$v,("background"));
-        @include getterFactory($getter-color-stroke, $v,("color", "stroke"));
-        @include getterFactory($getter-fill,$v,("fill"));
+        @include getter-factory($getter-background,$v,("background"));
+        @include getter-factory($getter-color-stroke, $v,("color", "stroke"));
+        @include getter-factory($getter-fill,$v,("fill"));
       }
     }
   }
