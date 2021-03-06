@@ -1,9 +1,9 @@
 {
-  "name": "@fwrlines/swatch",
-  "author": "Adrian V.",
-  "version": "1.0.0-beta.5",
+  "name": "@aztlan/swatch",
+  "author": "Aztlan Engineering",
+  "version": "0.0.1-alpha.0",
   "description": "",
-  "repository": "github:fwrlines/swatch",
+  "repository": "github:aztlan/swatch",
   "scripts": {
     "prepublish": "npm run build:main",
     "filesize": "./scripts/filesize.js",
@@ -31,6 +31,5 @@
     "stylelint": "^13.7.2",
     "stylelint-config-palantir": "^5.0.0",
     "stylelint-scss": "^3.18.0"
-  },
-  "dependencies": {}
+  }
 }
