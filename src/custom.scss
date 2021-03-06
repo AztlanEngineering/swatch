@@ -60,12 +60,12 @@ $monochrome-colors:(
     @include mixins.define-variables(vars.$sm-colors);
   }
 
-  @include mixins.setterFromMap($monochrome-colors);
-  @include mixins.setterFromMap(vars.$theme-colors);
-  @include mixins.setterFromMap(vars.$modals-colors);
-  @include mixins.setterFromMap(vars.$wheel-colors);
-  @include mixins.setterFromMap(vars.$ui-colors);
-  @include mixins.setterFromMap(vars.$sm-colors);
+  @include mixins.setter-from-map($monochrome-colors);
+  @include mixins.setter-from-map(vars.$theme-colors);
+  @include mixins.setter-from-map(vars.$modals-colors);
+  @include mixins.setter-from-map(vars.$wheel-colors);
+  @include mixins.setter-from-map(vars.$ui-colors);
+  @include mixins.setter-from-map(vars.$sm-colors);
   @include mixins.define-theme(vars.$colorscheme-dark, "ui-dark");
   @include mixins.define-theme(vars.$colorscheme-iceberg, "ui-iceberg");
   @include mixins.getters;

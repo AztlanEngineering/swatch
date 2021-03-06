@@ -22,12 +22,12 @@
     @include mixins.define-variables(vars.$sm-colors);
   }
 
-  @include mixins.setterFromMap(vars.$monochrome-colors);
-  @include mixins.setterFromMap(vars.$theme-colors);
-  @include mixins.setterFromMap(vars.$modals-colors);
-  @include mixins.setterFromMap(vars.$wheel-colors);
-  @include mixins.setterFromMap(vars.$ui-colors);
-  @include mixins.setterFromMap(vars.$sm-colors);
+  @include mixins.setter-from-map(vars.$monochrome-colors);
+  @include mixins.setter-from-map(vars.$theme-colors);
+  @include mixins.setter-from-map(vars.$modals-colors);
+  @include mixins.setter-from-map(vars.$wheel-colors);
+  @include mixins.setter-from-map(vars.$ui-colors);
+  @include mixins.setter-from-map(vars.$sm-colors);
   @include mixins.define-theme(vars.$colorscheme-light, "ui-light");
   @include mixins.define-theme-extras(vars.$colorscheme-light-extras, "ui-light");
   @include mixins.define-theme(vars.$colorscheme-dark, "ui-dark");
