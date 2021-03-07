@@ -34,5 +34,11 @@ module.exports = {
       ],
       { unspecified: "ignore" },
     ],
+    "property-no-unknown":[
+      true,
+      {
+        ignoreProperties: ['text-stroke', 'font-smooth'],
+      },
+    ]
   }
 }
