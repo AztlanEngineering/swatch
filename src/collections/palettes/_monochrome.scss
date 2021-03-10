@@ -1,0 +1,15 @@
+// Monochrome colors
+$base-white:#f5f5f5 !default;
+$base-pearl:#e0e0e0 !default;
+$base-grey:#999999 !default;
+$base-anchor:#333333 !default;
+$base-black:#0a0a0a !default;
+
+$palette:(
+  // Monochrome
+  "white":[$base-white null null null],
+  "pearl":[$base-pearl null null null],
+  "grey":[$base-grey null null null],
+  "anchor":[$base-anchor null null null],
+  "black":[$base-black null null null],
+);

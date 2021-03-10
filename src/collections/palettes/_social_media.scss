@@ -1,0 +1,13 @@
+// Monochrome colors
+$base-twitter:#55acee !default;
+$base-facebook:#3b5999 !default;
+$base-instagram:#e4405f !default;
+$base-google:orange !default;
+
+$palette:(
+  // Monochrome
+  "twitter":[$base-twitter null null null],
+  "facebook":[$base-facebook null null null],
+  "instagram":[$base-instagram null null null],
+  "google":[$base-google null null null],
+);

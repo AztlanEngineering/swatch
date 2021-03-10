@@ -1,20 +1,3 @@
-/* black   */
-/* red     */
-/* green   */
-/* yellow  */
-/* blue    */
-/* magenta */
-/* cyan    */
-/* white   */
-/* 8;bright colors */
-/* black   */
-/* red     */
-/* green   */
-/* yellow  */
-/* blue    */
-/* magenta */
-/* cyan    */
-/* white   */
 /*! from alphabet-scss */
 /**
  *
@@ -23,335 +6,42 @@
  *
  */
 :root {
-  --black: #000000;
-  --light-black: #121314;
-  --dark-black: #000000;
-  --on-black: #ffffff;
-  --white: #ffffff;
-  --light-white: #ffffff;
-  --dark-white: #f2f3f4;
-  --on-white: #000000;
-  --grey: #aabbcc;
-  --light-grey: #bcbdbe;
-  --dark-grey: #727374;
-  --on-grey: #ffffff;
-  --error: #f8333c;
-  --light-error: #f48489;
-  --dark-error: #df000a;
-  --on-error: #ffffff;
-  --warning: #ffbf00;
-  --light-warning: #f6ce55;
-  --dark-warning: #b38600;
-  --on-warning: #ffffff;
-  --success: #44af69;
-  --light-success: #7fc096;
-  --dark-success: #268045;
-  --on-success: #ffffff;
-  --primary: #213a8f;
-  --light-primary: #3c5ac1;
-  --dark-primary: #0e1e56;
-  --on-primary: #ffffff;
-  --secondary: #ff947a;
-  --light-secondary: #fcd3c9;
-  --dark-secondary: #ff562e;
-  --on-secondary: #ffffff;
-  --accent1: #32f9e1;
-  --light-accent1: #83f4e7;
-  --dark-accent1: #00dfc4;
-  --on-accent1: #ffffff;
-  --accent2: #ee4266;
-  --light-accent2: #ee8fa3;
-  --dark-accent2: #dc0734;
-  --on-accent2: #ffffff;
-  --accent3: #fc60a8;
-  --light-accent3: #f9afd1;
-  --dark-accent3: #ff117f;
-  --on-accent3: #ffffff;
-  --red: #f8333c;
-  --light-red: #f48489;
-  --dark-red: #df000a;
-  --on-red: #ffffff;
-  --orange: #f46036;
-  --light-orange: #f19d85;
-  --dark-orange: #dd3100;
-  --on-orange: #ffffff;
-  --yellow: #ffbf00;
-  --light-yellow: #f6ce55;
-  --dark-yellow: #b38600;
-  --on-yellow: #ffffff;
-  --olive: #a1c181;
-  --light-olive: #c7d5ba;
-  --dark-olive: #7bb145;
-  --on-olive: #ffffff;
-  --green: #44af69;
-  --light-green: #7fc096;
-  --dark-green: #268045;
-  --on-green: #ffffff;
-  --indigo: #43aa8b;
-  --light-indigo: #7cbeaa;
-  --dark-indigo: #257b61;
-  --on-indigo: #ffffff;
-  --azure: #32f9e1;
-  --light-azure: #83f4e7;
-  --dark-azure: #00dfc4;
-  --on-azure: #ffffff;
-  --blue: #213a8f;
-  --light-blue: #3c5ac1;
-  --dark-blue: #0e1e56;
-  --on-blue: #ffffff;
-  --violet: #9381ff;
-  --light-violet: #d6d0fd;
-  --dark-violet: #5135ff;
-  --on-violet: #000000;
-  --pink: #e56399;
-  --light-pink: #ebaac5;
-  --dark-pink: #e4176c;
-  --on-pink: #ffffff;
-  --transparent: transparent;
-  --light-transparent: transparent;
-  --dark-transparent: transparent;
-  --on-transparent: #000000;
-  --background: #f2f3f4;
-  --light-background: #ffffff;
-  --dark-background: #dddedf;
-  --paragraph: #121314;
-  --light-paragraph: #000000;
-  --dark-paragraph: #323334;
-  --on-paragraph: #ffffff;
-  --navlink: #121314;
-  --light-navlink: #323334;
-  --dark-navlink: #000000;
-  --on-navlink: #ffffff;
-  --link: #3c5ac1;
-  --light-link: #32f9e1;
-  --dark-link: #213a8f;
-  --on-link: #ffffff;
-  --heading: #000000;
-  --light-heading: #121314;
-  --dark-heading: #000000;
-  --on-heading: #ffffff;
-  --subtitle: #727374;
-  --light-subtitle: #aabbcc;
-  --dark-subtitle: #121314;
-  --on-subtitle: #ffffff;
-  --metadata: #bcbdbe;
-  --light-metadata: #dddedf;
-  --dark-metadata: #aabbcc;
-  --on-metadata: #000000;
+  --white: #f5f5f5;
+  --dark-white: #dcd6d6;
+  --light-white: white;
+  --on-white: #0a0a0a;
+  --pearl: #e0e0e0;
+  --dark-pearl: #c9bfbf;
+  --light-pearl: #fcfcfc;
+  --on-pearl: #0a0a0a;
+  --grey: #999999;
+  --dark-grey: #887272;
+  --light-grey: #b5b5b5;
+  --on-grey: #f5f5f5;
+  --anchor: #333333;
+  --dark-anchor: #191515;
+  --light-anchor: #4f4f4f;
+  --on-anchor: #f5f5f5;
+  --black: #0a0a0a;
+  --dark-black: black;
+  --light-black: #262626;
+  --on-black: #f5f5f5;
   --twitter: #55acee;
-  --light-twitter: #a0cdef;
-  --dark-twitter: #0a8bec;
-  --on-twitter: #ffffff;
+  --dark-twitter: #1795f4;
+  --light-twitter: #8ec4ed;
+  --on-twitter: #f5f5f5;
   --facebook: #3b5999;
-  --light-facebook: #6a82b6;
-  --dark-facebook: #1f3669;
-  --on-facebook: #ffffff;
+  --dark-facebook: #243f78;
+  --light-facebook: #5b77b1;
+  --on-facebook: #f5f5f5;
   --instagram: #e4405f;
-  --light-instagram: #e68a9c;
-  --dark-instagram: #c81033;
-  --on-instagram: #ffffff;
-  --google: #f2f3f4;
-  --light-google: white;
-  --dark-google: #c4cdd6;
-  --on-google: #000000;
-}
-
-.x-black,
-.xh-black:focus,
-.xh-black:hover {
-  --x: var(--black);
-  --light-x: var(--light-black);
-  --dark-x: var(--dark-black);
-  --on-x: var(--on-black);
-}
-
-.y-black,
-.yh-black:focus,
-.yh-black:hover {
-  --y: var(--black);
-  --light-y: var(--light-black);
-  --dark-y: var(--dark-black);
-  --on-y: var(--on-black);
-}
-
-.x-white,
-.xh-white:focus,
-.xh-white:hover {
-  --x: var(--white);
-  --light-x: var(--light-white);
-  --dark-x: var(--dark-white);
-  --on-x: var(--on-white);
-}
-
-.y-white,
-.yh-white:focus,
-.yh-white:hover {
-  --y: var(--white);
-  --light-y: var(--light-white);
-  --dark-y: var(--dark-white);
-  --on-y: var(--on-white);
-}
-
-.x-grey,
-.xh-grey:focus,
-.xh-grey:hover {
-  --x: var(--grey);
-  --light-x: var(--light-grey);
-  --dark-x: var(--dark-grey);
-  --on-x: var(--on-grey);
-}
-
-.y-grey,
-.yh-grey:focus,
-.yh-grey:hover {
-  --y: var(--grey);
-  --light-y: var(--light-grey);
-  --dark-y: var(--dark-grey);
-  --on-y: var(--on-grey);
-}
-
-.x-primary,
-.xh-primary:focus,
-.xh-primary:hover {
-  --x: var(--primary);
-  --light-x: var(--light-primary);
-  --dark-x: var(--dark-primary);
-  --on-x: var(--on-primary);
-}
-
-.y-primary,
-.yh-primary:focus,
-.yh-primary:hover {
-  --y: var(--primary);
-  --light-y: var(--light-primary);
-  --dark-y: var(--dark-primary);
-  --on-y: var(--on-primary);
-}
-
-.x-secondary,
-.xh-secondary:focus,
-.xh-secondary:hover {
-  --x: var(--secondary);
-  --light-x: var(--light-secondary);
-  --dark-x: var(--dark-secondary);
-  --on-x: var(--on-secondary);
-}
-
-.y-secondary,
-.yh-secondary:focus,
-.yh-secondary:hover {
-  --y: var(--secondary);
-  --light-y: var(--light-secondary);
-  --dark-y: var(--dark-secondary);
-  --on-y: var(--on-secondary);
-}
-
-.x-accent1,
-.xh-accent1:focus,
-.xh-accent1:hover {
-  --x: var(--accent1);
-  --light-x: var(--light-accent1);
-  --dark-x: var(--dark-accent1);
-  --on-x: var(--on-accent1);
-}
-
-.y-accent1,
-.yh-accent1:focus,
-.yh-accent1:hover {
-  --y: var(--accent1);
-  --light-y: var(--light-accent1);
-  --dark-y: var(--dark-accent1);
-  --on-y: var(--on-accent1);
-}
-
-.x-accent2,
-.xh-accent2:focus,
-.xh-accent2:hover {
-  --x: var(--accent2);
-  --light-x: var(--light-accent2);
-  --dark-x: var(--dark-accent2);
-  --on-x: var(--on-accent2);
-}
-
-.y-accent2,
-.yh-accent2:focus,
-.yh-accent2:hover {
-  --y: var(--accent2);
-  --light-y: var(--light-accent2);
-  --dark-y: var(--dark-accent2);
-  --on-y: var(--on-accent2);
-}
-
-.x-accent3,
-.xh-accent3:focus,
-.xh-accent3:hover {
-  --x: var(--accent3);
-  --light-x: var(--light-accent3);
-  --dark-x: var(--dark-accent3);
-  --on-x: var(--on-accent3);
-}
-
-.y-accent3,
-.yh-accent3:focus,
-.yh-accent3:hover {
-  --y: var(--accent3);
-  --light-y: var(--light-accent3);
-  --dark-y: var(--dark-accent3);
-  --on-y: var(--on-accent3);
-}
-
-.x-error,
-.xh-error:focus,
-.xh-error:hover {
-  --x: var(--error);
-  --light-x: var(--light-error);
-  --dark-x: var(--dark-error);
-  --on-x: var(--on-error);
-}
-
-.y-error,
-.yh-error:focus,
-.yh-error:hover {
-  --y: var(--error);
-  --light-y: var(--light-error);
-  --dark-y: var(--dark-error);
-  --on-y: var(--on-error);
-}
-
-.x-warning,
-.xh-warning:focus,
-.xh-warning:hover {
-  --x: var(--warning);
-  --light-x: var(--light-warning);
-  --dark-x: var(--dark-warning);
-  --on-x: var(--on-warning);
-}
-
-.y-warning,
-.yh-warning:focus,
-.yh-warning:hover {
-  --y: var(--warning);
-  --light-y: var(--light-warning);
-  --dark-y: var(--dark-warning);
-  --on-y: var(--on-warning);
-}
-
-.x-success,
-.xh-success:focus,
-.xh-success:hover {
-  --x: var(--success);
-  --light-x: var(--light-success);
-  --dark-x: var(--dark-success);
-  --on-x: var(--on-success);
-}
-
-.y-success,
-.yh-success:focus,
-.yh-success:hover {
-  --y: var(--success);
-  --light-y: var(--light-success);
-  --dark-y: var(--dark-success);
-  --on-y: var(--on-success);
+  --dark-instagram: #d91338;
+  --light-instagram: #e4788d;
+  --on-instagram: #f5f5f5;
+  --google: orange;
+  --dark-google: #c78100;
+  --light-google: #f6b641;
+  --on-google: #f5f5f5;
 }
 
 .x-red,
@@ -534,22 +224,148 @@
   --on-y: var(--on-pink);
 }
 
-.x-transparent,
-.xh-transparent:focus,
-.xh-transparent:hover {
-  --x: var(--transparent);
-  --light-x: var(--light-transparent);
-  --dark-x: var(--dark-transparent);
-  --on-x: var(--on-transparent);
+.x-primary,
+.xh-primary:focus,
+.xh-primary:hover {
+  --x: var(--primary);
+  --light-x: var(--light-primary);
+  --dark-x: var(--dark-primary);
+  --on-x: var(--on-primary);
 }
 
-.y-transparent,
-.yh-transparent:focus,
-.yh-transparent:hover {
-  --y: var(--transparent);
-  --light-y: var(--light-transparent);
-  --dark-y: var(--dark-transparent);
-  --on-y: var(--on-transparent);
+.y-primary,
+.yh-primary:focus,
+.yh-primary:hover {
+  --y: var(--primary);
+  --light-y: var(--light-primary);
+  --dark-y: var(--dark-primary);
+  --on-y: var(--on-primary);
+}
+
+.x-secondary,
+.xh-secondary:focus,
+.xh-secondary:hover {
+  --x: var(--secondary);
+  --light-x: var(--light-secondary);
+  --dark-x: var(--dark-secondary);
+  --on-x: var(--on-secondary);
+}
+
+.y-secondary,
+.yh-secondary:focus,
+.yh-secondary:hover {
+  --y: var(--secondary);
+  --light-y: var(--light-secondary);
+  --dark-y: var(--dark-secondary);
+  --on-y: var(--on-secondary);
+}
+
+.x-accent1,
+.xh-accent1:focus,
+.xh-accent1:hover {
+  --x: var(--accent1);
+  --light-x: var(--light-accent1);
+  --dark-x: var(--dark-accent1);
+  --on-x: var(--on-accent1);
+}
+
+.y-accent1,
+.yh-accent1:focus,
+.yh-accent1:hover {
+  --y: var(--accent1);
+  --light-y: var(--light-accent1);
+  --dark-y: var(--dark-accent1);
+  --on-y: var(--on-accent1);
+}
+
+.x-accent2,
+.xh-accent2:focus,
+.xh-accent2:hover {
+  --x: var(--accent2);
+  --light-x: var(--light-accent2);
+  --dark-x: var(--dark-accent2);
+  --on-x: var(--on-accent2);
+}
+
+.y-accent2,
+.yh-accent2:focus,
+.yh-accent2:hover {
+  --y: var(--accent2);
+  --light-y: var(--light-accent2);
+  --dark-y: var(--dark-accent2);
+  --on-y: var(--on-accent2);
+}
+
+.x-accent3,
+.xh-accent3:focus,
+.xh-accent3:hover {
+  --x: var(--accent3);
+  --light-x: var(--light-accent3);
+  --dark-x: var(--dark-accent3);
+  --on-x: var(--on-accent3);
+}
+
+.y-accent3,
+.yh-accent3:focus,
+.yh-accent3:hover {
+  --y: var(--accent3);
+  --light-y: var(--light-accent3);
+  --dark-y: var(--dark-accent3);
+  --on-y: var(--on-accent3);
+}
+
+.x-success,
+.xh-success:focus,
+.xh-success:hover {
+  --x: var(--success);
+  --light-x: var(--light-success);
+  --dark-x: var(--dark-success);
+  --on-x: var(--on-success);
+}
+
+.y-success,
+.yh-success:focus,
+.yh-success:hover {
+  --y: var(--success);
+  --light-y: var(--light-success);
+  --dark-y: var(--dark-success);
+  --on-y: var(--on-success);
+}
+
+.x-warning,
+.xh-warning:focus,
+.xh-warning:hover {
+  --x: var(--warning);
+  --light-x: var(--light-warning);
+  --dark-x: var(--dark-warning);
+  --on-x: var(--on-warning);
+}
+
+.y-warning,
+.yh-warning:focus,
+.yh-warning:hover {
+  --y: var(--warning);
+  --light-y: var(--light-warning);
+  --dark-y: var(--dark-warning);
+  --on-y: var(--on-warning);
+}
+
+.x-error,
+.xh-error:focus,
+.xh-error:hover {
+  --x: var(--error);
+  --light-x: var(--light-error);
+  --dark-x: var(--dark-error);
+  --on-x: var(--on-error);
+}
+
+.y-error,
+.yh-error:focus,
+.yh-error:hover {
+  --y: var(--error);
+  --light-y: var(--light-error);
+  --dark-y: var(--dark-error);
+  --on-y: var(--on-error);
 }
 
 .x-background,
@@ -586,42 +402,6 @@
   --light-y: var(--light-paragraph);
   --dark-y: var(--dark-paragraph);
   --on-y: var(--on-paragraph);
-}
-
-.x-navlink,
-.xh-navlink:focus,
-.xh-navlink:hover {
-  --x: var(--navlink);
-  --light-x: var(--light-navlink);
-  --dark-x: var(--dark-navlink);
-  --on-x: var(--on-navlink);
-}
-
-.y-navlink,
-.yh-navlink:focus,
-.yh-navlink:hover {
-  --y: var(--navlink);
-  --light-y: var(--light-navlink);
-  --dark-y: var(--dark-navlink);
-  --on-y: var(--on-navlink);
-}
-
-.x-link,
-.xh-link:focus,
-.xh-link:hover {
-  --x: var(--link);
-  --light-x: var(--light-link);
-  --dark-x: var(--dark-link);
-  --on-x: var(--on-link);
-}
-
-.y-link,
-.yh-link:focus,
-.yh-link:hover {
-  --y: var(--link);
-  --light-y: var(--light-link);
-  --dark-y: var(--dark-link);
-  --on-y: var(--on-link);
 }
 
 .x-heading,
@@ -676,6 +456,132 @@
   --light-y: var(--light-metadata);
   --dark-y: var(--dark-metadata);
   --on-y: var(--on-metadata);
+}
+
+.x-link,
+.xh-link:focus,
+.xh-link:hover {
+  --x: var(--link);
+  --light-x: var(--light-link);
+  --dark-x: var(--dark-link);
+  --on-x: var(--on-link);
+}
+
+.y-link,
+.yh-link:focus,
+.yh-link:hover {
+  --y: var(--link);
+  --light-y: var(--light-link);
+  --dark-y: var(--dark-link);
+  --on-y: var(--on-link);
+}
+
+.x-navlink,
+.xh-navlink:focus,
+.xh-navlink:hover {
+  --x: var(--navlink);
+  --light-x: var(--light-navlink);
+  --dark-x: var(--dark-navlink);
+  --on-x: var(--on-navlink);
+}
+
+.y-navlink,
+.yh-navlink:focus,
+.yh-navlink:hover {
+  --y: var(--navlink);
+  --light-y: var(--light-navlink);
+  --dark-y: var(--dark-navlink);
+  --on-y: var(--on-navlink);
+}
+
+.x-white,
+.xh-white:focus,
+.xh-white:hover {
+  --x: var(--white);
+  --light-x: var(--light-white);
+  --dark-x: var(--dark-white);
+  --on-x: var(--on-white);
+}
+
+.y-white,
+.yh-white:focus,
+.yh-white:hover {
+  --y: var(--white);
+  --light-y: var(--light-white);
+  --dark-y: var(--dark-white);
+  --on-y: var(--on-white);
+}
+
+.x-pearl,
+.xh-pearl:focus,
+.xh-pearl:hover {
+  --x: var(--pearl);
+  --light-x: var(--light-pearl);
+  --dark-x: var(--dark-pearl);
+  --on-x: var(--on-pearl);
+}
+
+.y-pearl,
+.yh-pearl:focus,
+.yh-pearl:hover {
+  --y: var(--pearl);
+  --light-y: var(--light-pearl);
+  --dark-y: var(--dark-pearl);
+  --on-y: var(--on-pearl);
+}
+
+.x-grey,
+.xh-grey:focus,
+.xh-grey:hover {
+  --x: var(--grey);
+  --light-x: var(--light-grey);
+  --dark-x: var(--dark-grey);
+  --on-x: var(--on-grey);
+}
+
+.y-grey,
+.yh-grey:focus,
+.yh-grey:hover {
+  --y: var(--grey);
+  --light-y: var(--light-grey);
+  --dark-y: var(--dark-grey);
+  --on-y: var(--on-grey);
+}
+
+.x-anchor,
+.xh-anchor:focus,
+.xh-anchor:hover {
+  --x: var(--anchor);
+  --light-x: var(--light-anchor);
+  --dark-x: var(--dark-anchor);
+  --on-x: var(--on-anchor);
+}
+
+.y-anchor,
+.yh-anchor:focus,
+.yh-anchor:hover {
+  --y: var(--anchor);
+  --light-y: var(--light-anchor);
+  --dark-y: var(--dark-anchor);
+  --on-y: var(--on-anchor);
+}
+
+.x-black,
+.xh-black:focus,
+.xh-black:hover {
+  --x: var(--black);
+  --light-x: var(--light-black);
+  --dark-x: var(--dark-black);
+  --on-x: var(--on-black);
+}
+
+.y-black,
+.yh-black:focus,
+.yh-black:hover {
+  --y: var(--black);
+  --light-y: var(--light-black);
+  --dark-y: var(--dark-black);
+  --on-y: var(--on-black);
 }
 
 .x-twitter,
@@ -750,121 +656,108 @@
   --on-y: var(--on-google);
 }
 
+:root,
 .ui-light {
-  --background: #f2f3f4;
-  --light-background: #ffffff;
-  --dark-background: #dddedf;
-  --paragraph: #121314;
-  --light-paragraph: #000000;
-  --dark-paragraph: #323334;
-  --on-paragraph: #ffffff;
-  --navlink: #121314;
-  --light-navlink: #323334;
-  --dark-navlink: #000000;
-  --on-navlink: #ffffff;
-  --link: #3c5ac1;
-  --light-link: #32f9e1;
-  --dark-link: #213a8f;
-  --on-link: #ffffff;
-  --heading: #000000;
-  --light-heading: #121314;
-  --dark-heading: #000000;
-  --on-heading: #ffffff;
-  --subtitle: #727374;
-  --light-subtitle: #aabbcc;
-  --dark-subtitle: #121314;
-  --on-subtitle: #ffffff;
-  --metadata: #bcbdbe;
-  --light-metadata: #dddedf;
-  --dark-metadata: #aabbcc;
-  --on-metadata: #000000;
-}
-
-#main.ui-light,
-#main > .ui-light {
-  --shadow: 0.2em 0.2em 0.5em rgba(188, 190, 189, 0.8);
-}
-
-.ui-dark {
-  --background: #121314;
-  --light-background: #323334;
-  --dark-background: #000000;
-  --paragraph: #f2f3f4;
-  --light-paragraph: #ffffff;
-  --dark-paragraph: #dddedf;
-  --on-paragraph: #000000;
-  --navlink: #f2f3f4;
-  --light-navlink: #dddedf;
-  --dark-navlink: #ffffff;
-  --on-navlink: #000000;
-  --link: #00dfc4;
-  --light-link: #009280;
-  --dark-link: #32f9e1;
-  --on-link: #ffffff;
-  --heading: #ffffff;
-  --light-heading: #ffffff;
-  --dark-heading: #f2f3f4;
-  --on-heading: #000000;
-  --subtitle: #bcbdbe;
-  --light-subtitle: #aabbcc;
-  --dark-subtitle: #dddedf;
-  --on-subtitle: #000000;
-  --metadata: #727374;
-  --light-metadata: #323334;
-  --dark-metadata: #aabbcc;
-  --on-metadata: #ffffff;
-}
-
-#main.ui-dark,
-#main > .ui-dark {
-  --shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.3);
-}
-
-.ui-iceberg {
-  --background: black;
-  --light-background: #161821;
-  --dark-background: black;
-  --paragraph: #c6c8d1;
-  --light-paragraph: #d2d4de;
-  --dark-paragraph: #9399b8;
-  --on-paragraph: #161821;
-  --navlink: #89b8c2;
-  --light-navlink: #95c4ce;
-  --dark-navlink: #4aa2b4;
-  --on-navlink: #c6c8d1;
-  --link: #89b8c2;
-  --light-link: #95c4ce;
-  --dark-link: #4aa2b4;
-  --on-link: #c6c8d1;
-  --heading: #c6c8d1;
-  --light-heading: #d2d4de;
-  --dark-heading: #9399b8;
-  --on-heading: #161821;
-  --subtitle: #9399b8;
-  --light-subtitle: #c6c8d1;
-  --dark-subtitle: #5866a6;
-  --on-subtitle: #161821;
-  --metadata: #84a0c6;
-  --light-metadata: #91acd1;
-  --dark-metadata: #4476ba;
-  --on-metadata: #c6c8d1;
-  --success: #b4be82;
-  --light-success: #c0ca8e;
-  --dark-success: #9bac47;
-  --on-success: #c6c8d1;
-  --error: #e27878;
-  --light-error: #e98989;
-  --dark-error: #e02d2d;
-  --on-error: #c6c8d1;
-  --warning: #e2a478;
-  --light-warning: #e9b189;
-  --dark-warning: #e0782d;
-  --on-warning: #c6c8d1;
-}
-
-#main.ui-iceberg,
-#main > .ui-iceberg {
-  --shadow-hover: 0 0 4em rgba(149, 206, 196, 0.2);
+  --red: #f8333c;
+  --dark-red: #f3000b;
+  --light-red: #f37076;
+  --on-red: #f5f5f5;
+  --orange: #f46036;
+  --dark-orange: #f03602;
+  --light-orange: #f08e72;
+  --on-orange: #f5f5f5;
+  --yellow: #ffbf00;
+  --dark-yellow: #c79500;
+  --light-yellow: #f6c941;
+  --on-yellow: #f5f5f5;
+  --olive: #a1c181;
+  --dark-olive: #85b950;
+  --light-olive: #bdcead;
+  --on-olive: #f5f5f5;
+  --green: #44af69;
+  --dark-green: #2c8f4e;
+  --light-green: #71ba8a;
+  --on-green: #f5f5f5;
+  --indigo: #43aa8b;
+  --dark-indigo: #2b8a6d;
+  --light-indigo: #6db8a1;
+  --on-indigo: #f5f5f5;
+  --azure: #03c9bc;
+  --dark-azure: #00948a;
+  --light-azure: #14f0e2;
+  --on-azure: #f5f5f5;
+  --blue: #1f4684;
+  --dark-blue: #102d5b;
+  --light-blue: #3460a8;
+  --on-blue: #f5f5f5;
+  --violet: #9381ff;
+  --dark-violet: #6349ff;
+  --light-violet: #c5bcfc;
+  --on-violet: #0a0a0a;
+  --pink: #e56399;
+  --dark-pink: #e82878;
+  --light-pink: #e799b9;
+  --on-pink: #f5f5f5;
+  --primary: #213a8f;
+  --dark-primary: #112567;
+  --light-primary: #3652b2;
+  --on-primary: #f5f5f5;
+  --secondary: #ff947a;
+  --dark-secondary: #ff6742;
+  --light-secondary: #fcc3b6;
+  --on-secondary: #f5f5f5;
+  --accent1: #32f9e1;
+  --dark-accent1: #00f3d6;
+  --light-accent1: #6ff4e4;
+  --on-accent1: #f5f5f5;
+  --accent2: #ee4266;
+  --dark-accent2: #ef0939;
+  --light-accent2: #ec7c94;
+  --on-accent2: #f5f5f5;
+  --accent3: #fc60a8;
+  --dark-accent3: #ff258a;
+  --light-accent3: #f89cc6;
+  --on-accent3: #f5f5f5;
+  --success: var(--green);
+  --dark-success: var(--light-green);
+  --light-success: var(--dark-green);
+  --on-success: var(--on-green);
+  --warning: var(--orange);
+  --dark-warning: var(--light-orange);
+  --light-warning: var(--dark-orange);
+  --on-warning: var(--on-orange);
+  --error: var(--red);
+  --dark-error: var(--light-red);
+  --light-error: var(--dark-red);
+  --on-error: var(--on-red);
+  --background: var(--white);
+  --dark-background: var(--light-white);
+  --light-background: var(--dark-white);
+  --on-background: var(--on-white);
+  --paragraph: var(--black);
+  --dark-paragraph: var(--light-black);
+  --light-paragraph: var(--dark-black);
+  --on-paragraph: var(--on-black);
+  --heading: var(--black);
+  --dark-heading: var(--light-black);
+  --light-heading: var(--dark-black);
+  --on-heading: var(--on-black);
+  --subtitle: var(--anchor);
+  --dark-subtitle: var(--light-anchor);
+  --light-subtitle: var(--dark-anchor);
+  --on-subtitle: var(--on-anchor);
+  --metadata: var(--grey);
+  --dark-metadata: var(--light-grey);
+  --light-metadata: var(--dark-grey);
+  --on-metadata: var(--on-grey);
+  --link: var(--blue);
+  --dark-link: var(--light-blue);
+  --light-link: var(--dark-blue);
+  --on-link: var(--on-blue);
+  --navlink: var(--primary);
+  --dark-navlink: var(--light-primary);
+  --light-navlink: var(--dark-primary);
+  --on-navlink: var(--on-primary);
 }
 
 .b-x {

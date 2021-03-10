@@ -1,55 +1,3 @@
-@use "collections/palettes/monochrome";
-
-//
-//
-// 1 / Palette Transforms
-//
-//
-
-$contrast-using-dark-text:monochrome.$base-black !default;
-$contrast-using-light-text:monochrome.$base-white !default;
-
-$light-nuance-lighten-by:11% !default;
-$light-nuance-desaturate-by:9% !default;
-$dark-nuance-darken-by:11% !default;
-$dark-nuance-saturate-by:9% !default;
-$treshold-contrast-nuance:.69;
-
-@function dark-nuance(
-  $color,
-  $darken-by:$dark-nuance-darken-by,
-  $saturate-by:$dark-nuance-saturate-by,
-) {
-  @return saturate(darken($color, $darken-by), $saturate-by);
-}
-
-@function light-nuance(
-  $color,
-  $lighten-by:$light-nuance-lighten-by,
-  $desaturate-by:$light-nuance-desaturate-by,
-) {
-  @return desaturate(lighten($color, $lighten-by), $desaturate-by);
-}
-
-@function contrast-nuance($color, $dark-text:$contrast-using-dark-text, $light-text:$contrast-using-light-text) {
-  $count:red($color) + green($color) + blue($color);
-  $max:256 * 3 * $treshold-contrast-nuance;
-  @if $count < $max {
-    @return $light-text;
-  }
-  @else {
-    @return $dark-text;
-  }
-}
-
-
-//
-//
-// 2 / Setters and Getters factories
-//
-//
-
-
 // Change how the setters and getters are called
 $prefix-hover:"h" !default;
 //$prefixes-setters:"x", "y", "z" !default;
@@ -71,30 +19,14 @@ $getter-fill:"e-" !default;
 }
 
 @mixin define-variables($array) {
-  @each $name, $colorlist in $array {
-    $base:nth($colorlist, 1);
-    $dark:nth($colorlist, 2);
-    $light:nth($colorlist, 3);
-    $contrast:nth($colorlist, 4);
-
-    --#{$name}: #{$base};
-    @if ($dark) {
-      --dark-#{$name}: #{$dark};
-    }
-    @else {
-      --dark-#{$name}: #{dark-nuance($base)};
-    }
-    @if ($light) {
-      --light-#{$name}: #{$light};
-    }
-    @else {
-      --light-#{$name}: #{light-nuance($base)};
-    }
-    @if ($contrast) {
-      --on-#{$name}: #{$contrast};
-    }
-    @else {
-      --on-#{$name}: #{contrast-nuance($base)};
+  @each $name, $subarray in $array {
+    @each $variant, $value in $subarray {
+      @if $variant == "base" {
+        --#{$name}: #{$value};
+      }
+      @else {
+        --#{$variant}-#{$name}: #{$value};
+      }
     }
   }
 }
@@ -128,8 +60,8 @@ $getter-fill:"e-" !default;
 //
 
 
-@mixin setters-from-map($array) {
-  @each $name, $colorlist in $array {
+@mixin setter-from-map($array) {
+  @each $name, $subarray in $array {
     @each $prefix in $prefixes-setters {
       .#{$prefix}-#{$name},
       .#{$prefix}#{$prefix-hover}-#{$name}:focus,

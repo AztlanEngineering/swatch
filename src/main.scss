@@ -5,7 +5,8 @@
  *
  */
 
-@use "vars";
+@use "collections/palettes";
+@use "collections/colorschemes";
 @use "mixins";
 
 //
@@ -14,26 +15,15 @@
 
 @mixin main {
   :root {
-    @include mixins.define-variables(vars.$monochrome-colors);
-    @include mixins.define-variables(vars.$modals-colors);
-    @include mixins.define-variables(vars.$theme-colors);
-    @include mixins.define-variables(vars.$wheel-colors);
-    @include mixins.define-variables(vars.$ui-colors);
-    @include mixins.define-variables(vars.$sm-colors);
+    @include mixins.define-variables(palettes.$monochrome-palette);
+    @include mixins.define-variables(palettes.$social-media-palette);
   }
 
-  @include mixins.setter-from-map(vars.$monochrome-colors);
-  @include mixins.setter-from-map(vars.$theme-colors);
-  @include mixins.setter-from-map(vars.$modals-colors);
-  @include mixins.setter-from-map(vars.$wheel-colors);
-  @include mixins.setter-from-map(vars.$ui-colors);
-  @include mixins.setter-from-map(vars.$sm-colors);
-  @include mixins.define-theme(vars.$colorscheme-light, "ui-light");
-  @include mixins.define-theme-extras(vars.$colorscheme-light-extras, "ui-light");
-  @include mixins.define-theme(vars.$colorscheme-dark, "ui-dark");
-  @include mixins.define-theme-extras(vars.$colorscheme-dark-extras, "ui-dark");
-  @include mixins.define-theme(vars.$colorscheme-iceberg, "ui-iceberg");
-  @include mixins.define-theme-extras(vars.$colorscheme-iceberg-extras, "ui-iceberg");
+  @include mixins.setters-from-map(colorschemes.$light-colorscheme);
+  @include mixins.setters-from-map(palettes.$monochrome-palette);
+  @include mixins.setters-from-map(palettes.$social-media-palette);
+  @include mixins.define-theme(colorschemes.$light-colorscheme, "ui-light", true);
+  //@include mixins.define-theme-extras(vars.$colorscheme-light-extras, "ui-light");
   @include mixins.getters;
 }
 

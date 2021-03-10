@@ -13,6 +13,11 @@
 
 **Demos => [Here](http://xyz.779.mx:3000/docs/examples)**
 
+## TODO
+
++ Merge modals + ui
++ improve semantics of themes to avoid double def
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):

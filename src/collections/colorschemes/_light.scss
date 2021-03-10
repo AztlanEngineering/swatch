@@ -1,0 +1,76 @@
+@use "../palettes/monochrome";
+
+
+// Wheel colors
+$base-red:#f8333c !default;
+$base-orange:#f46036 !default;
+$base-yellow:#ffbf00 !default;
+$base-olive:#a1c181 !default;
+$base-green:#44af69 !default;
+$base-indigo:#43aa8b !default;
+$base-azure:#03c9bc !default;
+$base-blue:#1f4684 !default;
+$base-violet:#9381ff !default;
+$base-pink:#e56399 !default;
+
+// Brand
+$base-primary:#213a8f !default;
+$base-secondary:#ff947a !default;
+$base-accent1:#32f9e1 !default;
+$base-accent2:#ee4266 !default;
+$base-accent3:#fc60a8 !default;
+
+// Colorscheme
+
+$colorscheme:(
+  // Wheel
+  "red":[$base-red null null null],
+  "orange":[$base-orange null null null],
+  "yellow":[$base-yellow null null null],
+  "olive":[$base-olive null null null],
+  "green":[$base-green null null null],
+  "indigo":[$base-indigo null null null],
+  "azure":[$base-azure null null null],
+  "blue":[$base-blue null null null],
+  "violet":[$base-violet null null null],
+  "pink":[$base-pink null null null],
+  // Brand
+  "primary":[$base-primary null null null],
+  "secondary":[$base-secondary null null null],
+  "accent1":[$base-accent1 null null null],
+  "accent2":[$base-accent2 null null null],
+  "accent3":[$base-accent3 null null null],
+  // Modals
+  "success":[var(--green) var(--light-green) var(--dark-green) var(--on-green)],
+  "warning":[var(--orange) var(--light-orange) var(--dark-orange) var(--on-orange)],
+  "error":[var(--red) var(--light-red) var(--dark-red) var(--on-red)],
+  // UI
+  "background":[var(--white) var(--light-white) var(--dark-white) var(--on-white)],
+  "paragraph":[var(--black) var(--light-black) var(--dark-black) var(--on-black)],
+  "heading":[var(--black) var(--light-black) var(--dark-black) var(--on-black)],
+  "subtitle":[var(--anchor) var(--light-anchor) var(--dark-anchor) var(--on-anchor)],
+  "metadata":[var(--grey) var(--light-grey) var(--dark-grey) var(--on-grey)],
+  "link":[var(--blue) var(--light-blue) var(--dark-blue) var(--on-blue)],
+  "navlink":[var(--primary) var(--light-primary) var(--dark-primary) var(--on-primary)]
+);
+
+
+$colorscheme-light-shadow-color:monochrome.$base-grey;
+$colorscheme-light-extras:(
+  "shadow":.2em .2em .5em rgba(
+    red($colorscheme-light-shadow-color),
+    blue($colorscheme-light-shadow-color),
+    green($colorscheme-light-shadow-color),
+    .8
+  ),
+);
+
+$colorscheme-iceberg-shadow-color:monochrome.$base-grey;
+$colorscheme-iceberg-extras:(
+  "shadow-hover":0 0 4em rgba(
+    red($colorscheme-iceberg-shadow-color),
+    blue($colorscheme-iceberg-shadow-color),
+    green($colorscheme-iceberg-shadow-color),
+    .2
+  ),
+);
