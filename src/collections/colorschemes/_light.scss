@@ -41,17 +41,17 @@ $colorscheme:(
   "accent2":[$base-accent2 null null null],
   "accent3":[$base-accent3 null null null],
   // Modals
-  "success":[var(--green) var(--light-green) var(--dark-green) var(--on-green)],
-  "warning":[var(--orange) var(--light-orange) var(--dark-orange) var(--on-orange)],
-  "error":[var(--red) var(--light-red) var(--dark-red) var(--on-red)],
+  "success":[var(--green) var(--dark-green) var(--light-green) var(--on-green)],
+  "warning":[var(--orange) var(--dark-orange) var(--light-orange) var(--on-orange)],
+  "error":[var(--red) var(--dark-red) var(--light-red) var(--on-red)],
   // UI
-  "background":[var(--white) var(--light-white) var(--dark-white) var(--on-white)],
-  "paragraph":[var(--black) var(--light-black) var(--dark-black) var(--on-black)],
-  "heading":[var(--black) var(--light-black) var(--dark-black) var(--on-black)],
-  "subtitle":[var(--anchor) var(--light-anchor) var(--dark-anchor) var(--on-anchor)],
-  "metadata":[var(--grey) var(--light-grey) var(--dark-grey) var(--on-grey)],
-  "link":[var(--blue) var(--light-blue) var(--dark-blue) var(--on-blue)],
-  "navlink":[var(--primary) var(--light-primary) var(--dark-primary) var(--on-primary)]
+  "background":[var(--white) var(--dark-white) var(--light-white) var(--on-white)],
+  "paragraph":[var(--black) var(--dark-black) var(--light-black) var(--on-black)],
+  "heading":[var(--black) var(--dark-black) var(--light-black) var(--on-black)],
+  "subtitle":[var(--anchor) var(--dark-anchor) var(--light-anchor) var(--on-anchor)],
+  "metadata":[var(--grey) var(--dark-grey) var(--light-grey) var(--on-grey)],
+  "link":[var(--blue) var(--dark-blue) var(--light-blue) var(--on-blue)],
+  "navlink":[var(--primary) var(--dark-primary) var(--light-primary) var(--on-primary)]
 );
 
 
