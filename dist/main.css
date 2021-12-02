@@ -38,10 +38,14 @@
   --dark-instagram: #d91338;
   --light-instagram: #e4788d;
   --on-instagram: #f5f5f5;
-  --google: orange;
-  --dark-google: #c78100;
-  --light-google: #f6b641;
+  --google: #ea4335;
+  --dark-google: #dc1b0b;
+  --light-google: #e8796f;
   --on-google: #f5f5f5;
+  --linkedin: #ea4335;
+  --dark-linkedin: #dc1b0b;
+  --light-linkedin: #e8796f;
+  --on-linkedin: #f5f5f5;
 }
 
 .x-red,
@@ -654,6 +658,24 @@
   --light-y: var(--light-google);
   --dark-y: var(--dark-google);
   --on-y: var(--on-google);
+}
+
+.x-linkedin,
+.xh-linkedin:focus,
+.xh-linkedin:hover {
+  --x: var(--linkedin);
+  --light-x: var(--light-linkedin);
+  --dark-x: var(--dark-linkedin);
+  --on-x: var(--on-linkedin);
+}
+
+.y-linkedin,
+.yh-linkedin:focus,
+.yh-linkedin:hover {
+  --y: var(--linkedin);
+  --light-y: var(--light-linkedin);
+  --dark-y: var(--dark-linkedin);
+  --on-y: var(--on-linkedin);
 }
 
 :root,
