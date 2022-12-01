@@ -25,7 +25,9 @@ $treshold-contrast-nuance:.69;
   @return desaturate(lighten($color, $lighten-by), $desaturate-by);
 }
 
-@function text-contrast-nuance($color, $dark-text:$contrast-using-dark-text, $light-text:$contrast-using-light-text) {
+@function text-contrast-nuance($color,
+$dark-text:$contrast-using-dark-text,
+  $light-text:$contrast-using-light-text) {
   $count:red($color) + green($color) + blue($color);
   $max:256 * 3 * $treshold-contrast-nuance;
   @if $count < $max {
