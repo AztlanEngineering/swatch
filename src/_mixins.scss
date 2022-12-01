@@ -97,7 +97,7 @@ $default-colorscheme-names: (
       --#{map.get($colorscheme-names, "shade2")}-#{$name}: #{dark-nuance($shade1)};
     }
     @if (shade3) {
-      --#{map.get($colorscheme-names, "shade3")}-#{$name}: #{shade3};
+      --#{map.get($colorscheme-names, "shade3")}-#{$name}: #{$shade3};
     }
     @else {
       --#{map.get($colorscheme-names, "shade3")}-#{$name}: #{light-nuance($shade1)};
