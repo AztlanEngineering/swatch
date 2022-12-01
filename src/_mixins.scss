@@ -1,3 +1,4 @@
+@use 'sass:map';
 @use "collections/palettes/monochrome";
 
 //
@@ -70,45 +71,56 @@ $getter-fill:"e-" !default;
   }
 }
 
-@mixin define-variables($array) {
-  @each $name, $colorlist in $array {
-    $base:nth($colorlist, 1);
-    $dark:nth($colorlist, 2);
-    $light:nth($colorlist, 3);
-    $contrast:nth($colorlist, 4);
+$default-colorscheme-names: (
+  "shade1": "",
+  "shade2": "dark",
+  "shade3": "light",
+  "shade4": "on"
+);
 
-    --#{$name}: #{$base};
-    @if ($dark) {
-      --dark-#{$name}: #{$dark};
+@mixin define-variables($array, $colorscheme-names: $default-colorscheme-names) {
+  @each $name, $colorlist in $array {
+    // $base:nth($colorlist, 1);
+    // $dark:nth($colorlist, 2);
+    // $light:nth($colorlist, 3);
+    // $contrast:nth($colorlist, 4);
+    $shade1:nth($colorlist, 1);
+    $shade2:nth($colorlist, 2);
+    $shade3:nth($colorlist, 3);
+    $shade4:nth($colorlist, 4);
+
+    --#{$name}: #{$shade1};
+    @if ($shade2) {
+      --#{map.get($colorscheme-names, "shade2")}-#{$name}: #{$shade2};
     }
     @else {
-      --dark-#{$name}: #{dark-nuance($base)};
+      --#{map.get($colorscheme-names, "shade2")}-#{$name}: #{dark-nuance($shade1)};
     }
-    @if ($light) {
-      --light-#{$name}: #{$light};
-    }
-    @else {
-      --light-#{$name}: #{light-nuance($base)};
-    }
-    @if ($contrast) {
-      --on-#{$name}: #{$contrast};
+    @if (shade3) {
+      --#{map.get($colorscheme-names, "shade3")}-#{$name}: #{$shade3};
     }
     @else {
-      --on-#{$name}: #{contrast-nuance($base)};
+      --#{map.get($colorscheme-names, "shade3")}-#{$name}: #{light-nuance($shade1)};
+    }
+    @if ($shade4) {
+      --#{map.get($colorscheme-names, "shade4")}-#{$name}: #{$shade4};
+    }
+    @else {
+      --#{map.get($colorscheme-names, "shade4")}-#{$name}: #{contrast-nuance($shade1)};
     }
   }
 }
 
-@mixin define-theme($array, $theme-name, $default:false) {
+@mixin define-theme($array, $theme-name, $default:false, $colorscheme-names: $default-colorscheme-names) {
   @if $default == true {
     :root,
     .#{$theme-name} {
-      @include define-variables($array);
+      @include define-variables($array, $colorscheme-names);
     }
   }
   @else {
     .#{$theme-name} {
-      @include define-variables($array);
+      @include define-variables($array, $colorscheme-names);
     }
   }
 }
@@ -128,16 +140,16 @@ $getter-fill:"e-" !default;
 //
 
 
-@mixin setters-from-map($array) {
+@mixin setters-from-map($array, $colorscheme-names: $default-colorscheme-names) {
   @each $name, $colorlist in $array {
     @each $prefix in $prefixes-setters {
       .#{$prefix}-#{$name},
       .#{$prefix}#{$prefix-hover}-#{$name}:focus,
       .#{$prefix}#{$prefix-hover}-#{$name}:hover {
         --#{$prefix}: var(--#{$name});
-        --light-#{$prefix}: var(--light-#{$name});
-        --dark-#{$prefix}: var(--dark-#{$name});
-        --on-#{$prefix}: var(--on-#{$name});
+        --#{map.get($colorscheme-names, "shade2")}-#{$prefix}: var(--#{map.get($colorscheme-names, "shade2")}-#{$name});
+        --#{map.get($colorscheme-names, "shade3")}-#{$prefix}: var(--#{map.get($colorscheme-names, "shade3")}-#{$name});
+        --#{map.get($colorscheme-names, "shade4")}-#{$prefix}: var(--#{map.get($colorscheme-names, "shade4")}-#{$name});
       }
     }
   }
@@ -149,10 +161,11 @@ $getter-fill:"e-" !default;
 //
 //
 
-@mixin getters {
-  $variants:"","light","dark","on";
+@mixin getters($colorscheme-names: $default-colorscheme-names) {
+  // $variants:"","light","dark","on";
+  $variants: $colorscheme-names;
   @each $register in $prefixes-setters {
-    @each $variant in $variants {
+    @each $name, $variant in $variants {
       @if $variant == "" {
         @include getter-factory($getter-background,$register,("background"));
         @include getter-factory($getter-color-stroke, $register,("color", "stroke"));
