@@ -1,4 +1,4 @@
-@use 'sass:map';
+@use "sass:map";
 @use "collections/palettes/monochrome";
 @use "vars";
 
@@ -73,7 +73,7 @@ $getter-fill:"e-" !default;
 }
 
 
-@mixin define-variables($array, $colorscheme-names: vars.$default-colorscheme-names) {
+@mixin define-variables($array, $colorscheme-names: vars.$shades-prefixes) {
   @each $name, $colorlist in $array {
     // $base:nth($colorlist, 1);
     // $dark:nth($colorlist, 2);
@@ -106,7 +106,7 @@ $getter-fill:"e-" !default;
   }
 }
 
-@mixin define-theme($array, $theme-name, $default:false, $colorscheme-names: vars.$default-colorscheme-names) {
+@mixin define-theme($array, $theme-name, $default:false, $colorscheme-names: vars.$shades-prefixes) {
   @if $default == true {
     :root,
     .#{$theme-name} {
@@ -135,7 +135,7 @@ $getter-fill:"e-" !default;
 //
 
 
-@mixin setters-from-map($array, $colorscheme-names: vars.$default-colorscheme-names) {
+@mixin setters-from-map($array, $colorscheme-names: vars.$shades-prefixes) {
   @each $name, $colorlist in $array {
     @each $prefix in $prefixes-setters {
       .#{$prefix}-#{$name},
@@ -156,7 +156,7 @@ $getter-fill:"e-" !default;
 //
 //
 
-@mixin getters($colorscheme-names: vars.$default-colorscheme-names) {
+@mixin getters($colorscheme-names: vars.$shades-prefixes) {
   // $variants:"","light","dark","on";
   $variants: $colorscheme-names;
   @each $register in $prefixes-setters {
