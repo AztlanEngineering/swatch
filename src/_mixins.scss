@@ -1,11 +1,11 @@
 @use "sass:map";
 @use "collections/palettes/monochrome";
 
-$shades-prefixes: (
-  "shade1": "",
-  "shade2": "dark",
-  "shade3": "light",
-  "shade4": "on"
+$nuances-prefixes: (
+  "nuance1": "",
+  "nuance2": "dark",
+  "nuance3": "light",
+  "nuance4": "on"
 ) !default;
 
 //
@@ -79,49 +79,49 @@ $getter-fill:"e-" !default;
 }
 
 
-@mixin define-variables($array, $colorscheme-names: $shades-prefixes) {
+@mixin define-variables($array, $nuances-names: $nuances-prefixes) {
   @each $name, $colorlist in $array {
     // $base:nth($colorlist, 1);
     // $dark:nth($colorlist, 2);
     // $light:nth($colorlist, 3);
     // $contrast:nth($colorlist, 4);
-    $shade1:nth($colorlist, 1);
-    $shade2:nth($colorlist, 2);
-    $shade3:nth($colorlist, 3);
-    $shade4:nth($colorlist, 4);
+    $nuance1:nth($colorlist, 1);
+    $nuance2:nth($colorlist, 2);
+    $nuance3:nth($colorlist, 3);
+    $nuance4:nth($colorlist, 4);
 
-    --#{$name}: #{$shade1};
-    @if ($shade2) {
-      --#{map.get($colorscheme-names, "shade2")}-#{$name}: #{$shade2};
+    --#{$name}: #{$nuance1};
+    @if ($nuance2) {
+      --#{map.get($nuances-names, "nuance2")}-#{$name}: #{$nuance2};
     }
     @else {
-      --#{map.get($colorscheme-names, "shade2")}-#{$name}: #{dark-nuance($shade1)};
+      --#{map.get($nuances-names, "nuance2")}-#{$name}: #{dark-nuance($nuance1)};
     }
-    @if ($shade3) {
-      --#{map.get($colorscheme-names, "shade3")}-#{$name}: #{$shade3};
-    }
-    @else {
-      --#{map.get($colorscheme-names, "shade3")}-#{$name}: #{light-nuance($shade1)};
-    }
-    @if ($shade4) {
-      --#{map.get($colorscheme-names, "shade4")}-#{$name}: #{$shade4};
+    @if ($nuance3) {
+      --#{map.get($nuances-names, "nuance3")}-#{$name}: #{$nuance3};
     }
     @else {
-      --#{map.get($colorscheme-names, "shade4")}-#{$name}: #{contrast-nuance($shade1)};
+      --#{map.get($nuances-names, "nuance3")}-#{$name}: #{light-nuance($nuance1)};
+    }
+    @if ($nuance4) {
+      --#{map.get($nuances-names, "nuance4")}-#{$name}: #{$nuance4};
+    }
+    @else {
+      --#{map.get($nuances-names, "nuance4")}-#{$name}: #{contrast-nuance($nuance1)};
     }
   }
 }
 
-@mixin define-theme($array, $theme-name, $default:false, $colorscheme-names: $shades-prefixes) {
+@mixin define-theme($array, $theme-name, $default:false, $nuances-names: $nuances-prefixes) {
   @if $default == true {
     :root,
     .#{$theme-name} {
-      @include define-variables($array, $colorscheme-names);
+      @include define-variables($array, $nuances-names);
     }
   }
   @else {
     .#{$theme-name} {
-      @include define-variables($array, $colorscheme-names);
+      @include define-variables($array, $nuances-names);
     }
   }
 }
@@ -141,16 +141,16 @@ $getter-fill:"e-" !default;
 //
 
 
-@mixin setters-from-map($array, $colorscheme-names: $shades-prefixes) {
+@mixin setters-from-map($array, $nuances-names: $nuances-prefixes) {
   @each $name, $colorlist in $array {
     @each $prefix in $prefixes-setters {
       .#{$prefix}-#{$name},
       .#{$prefix}#{$prefix-hover}-#{$name}:focus,
       .#{$prefix}#{$prefix-hover}-#{$name}:hover {
         --#{$prefix}: var(--#{$name});
-        --#{map.get($colorscheme-names, "shade2")}-#{$prefix}: var(--#{map.get($colorscheme-names, "shade2")}-#{$name});
-        --#{map.get($colorscheme-names, "shade3")}-#{$prefix}: var(--#{map.get($colorscheme-names, "shade3")}-#{$name});
-        --#{map.get($colorscheme-names, "shade4")}-#{$prefix}: var(--#{map.get($colorscheme-names, "shade4")}-#{$name});
+        --#{map.get($nuances-names, "nuance2")}-#{$prefix}: var(--#{map.get($nuances-names, "nuance2")}-#{$name});
+        --#{map.get($nuances-names, "nuance3")}-#{$prefix}: var(--#{map.get($nuances-names, "nuance3")}-#{$name});
+        --#{map.get($nuances-names, "nuance4")}-#{$prefix}: var(--#{map.get($nuances-names, "nuance4")}-#{$name});
       }
     }
   }
@@ -162,9 +162,9 @@ $getter-fill:"e-" !default;
 //
 //
 
-@mixin getters($colorscheme-names: $shades-prefixes) {
+@mixin getters($nuances-names: $nuances-prefixes) {
   // $variants:"","light","dark","on";
-  $variants: $colorscheme-names;
+  $variants: $nuances-names;
   @each $register in $prefixes-setters {
     @each $name, $variant in $variants {
       @if $variant == "" {
