@@ -1,12 +1,8 @@
 @use "sass:map";
 @use "collections/palettes/monochrome";
+@use "vars";
 
-$nuances-prefixes: (
-  "nuance1": "",
-  "nuance2": "dark",
-  "nuance3": "light",
-  "nuance4": "on"
-) !default;
+$nuances-prefixes: vars.$nuances-prefixes !default;
 
 //
 //
