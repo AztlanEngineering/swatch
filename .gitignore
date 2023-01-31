@@ -1,4 +1,5 @@
 comps/
+dist/
 # Logs
 logs
 *.log
