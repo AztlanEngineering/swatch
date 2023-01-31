@@ -1,7 +1,7 @@
 {
   "name": "@aztlan/swatch",
   "author": "Adrian V.",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "",
   "repository": "github:AztlanEngineering/swatch",
   "main": "dist/main.min.css",
